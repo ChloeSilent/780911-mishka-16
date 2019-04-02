@@ -75,13 +75,15 @@
           srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
         <source type="image/webp" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
 
-        <source media="(min-width: 1200px)" srcset="img/feature-1@1x@desktop.jpg 1x, img/feature-1@2x@desktop.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/feature-1@1x@tablet.jpg 1x, img/feature-1@2x@tablet.jpg 2x">
+        <source media="(min-width: 1200px)" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
+        <source media="(min-width: 768px)" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
         <img class="hit__img" width="260" height="316" src="http://placehold.it/260x316"
           srcset="http://placehold.it/260x316 2x" alt="корзинки">
       </picture>
 
-      <button class="modal-cart__btn" id="modal__btn">Заказать</button>
+      <p class="hit__price">Цена:<span class="hit__price-amount">990 руб.</span></p>
+      <button class="modal-cart__btn btn" id="modal__btn">Заказать</button>
+
       <sec id="modal" class="modal-cart__block">
         <h2 class="modal__heading">Добавить в корзину</h2>
         <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
@@ -115,6 +117,40 @@
         <li class="about-us__item about-us__pack">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
+    <section class="section reviews">
+      <h2 class="section__heading reviews__heading">Отзывы</h2>
+      <ul class="reviews__list slider">
+        <li class="review__item slider__item">
+          <div class="review__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии
+            сразу стали более стильнее, а также набирают больше лайков!</div>
+          <p class="review__author">Анастасия Красильникова</p>
+          <p class="review__nick">@misssssiskras</p>
+        </li>
+      </ul>
+      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+      <button class="reviews__next" type="button">Следующий отзыв</button>
+      <a class="reviews__write btn" href="#">Написать</a>
+    </section>
+    <section class="section contacts">
+      <h2 class="contacts__heading">Контакты</h2>
+      <div class="contacts__text">
+        <div class="contacts__mail mail">
+          <div class="contacts__type">e-mail:</div>
+          <a href="mailto:info@mimimishkashop.ru" class="mail__adress btn">info@mimimishkashop.ru</a>
+        </div>
+        <div class="contacts__adress adress">
+          <div class="contacts__type">адрес:</div>
+          <p class="adress__adress">
+            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+          </p>
+        </div>
+        <div class="contacts__map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A874f6ec814322c7a8513b306418dfe875a27af606a71ea7c426a16628e27dd93&amp;source=constructor"
+            width="360" height="460" frameborder="0"></iframe>
+    </section>
+    <a class="contacts__write btn" href="#">Напишите нам</a>
   </main>
   <footer class="footer">
     <div class="footer__col footer__social">
@@ -144,6 +180,7 @@
           <svg></svg>
         </a></p>
     </div>
+
   </footer>
 
 
