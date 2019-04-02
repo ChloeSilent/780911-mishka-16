@@ -67,7 +67,16 @@
         </li>
       </ul>
       <picture>
-        ф
+        <source type="image/webp" media="(min-width: 1200px)"
+          srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
+        <source type="image/webp" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
+
+        <source media="(min-width: 1200px)" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
+        <source media="(min-width: 768px)" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
+        <img class="hit__img" width="260" height="316" src="http://placehold.it/260x316"
+          srcset="http://placehold.it/260x316 2x" alt="корзинки">
       </picture>
 
       <p class="hit__price">Цена:<span class="hit__price-amount">990 руб.</span></p>
