@@ -30,7 +30,7 @@
 
   <header class="header">
     <a href="#" class="logo-link"><img src="http://placehold.it/150x100" alt="" class="logo-img"></a>
-    <s class="header__nav">
+    <div class="header__nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="catalog.html" class="nav-link"></a></li>
         <li class="nav__item"><a href="form.html" class="nav-link"></a></li>
@@ -38,7 +38,7 @@
         <li class="nav__item modal">Корзина<span class="nav__badge">пока пуста</span>
         </li>
       </ul>
-      </div>
+    </div>
   </header>
   <main class="main">
     <div class="intro">
@@ -84,7 +84,7 @@
       <p class="hit__price">Цена:<span class="hit__price-amount">990 руб.</span></p>
       <button class="modal-cart__btn btn" id="modal__btn">Заказать</button>
 
-      <sec id="modal" class="modal-cart__block">
+      <div id="modal" class="modal-cart__block">
         <h2 class="modal__heading">Добавить в корзину</h2>
         <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
           autocomplete="off">
@@ -103,7 +103,7 @@
           </div>
           <button class="sizes__submit" type="submit" value="Добавить">Добавить</button>
         </form>
-    </section>
+      </div>
 
     </section>
     <section class="section about-us">
@@ -145,10 +145,12 @@
             г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
           </p>
         </div>
-        <div class="contacts__map">
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A874f6ec814322c7a8513b306418dfe875a27af606a71ea7c426a16628e27dd93&amp;source=constructor"
-            width="360" height="460" frameborder="0"></iframe>
+      </div>
+      <div class="contacts__map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A874f6ec814322c7a8513b306418dfe875a27af606a71ea7c426a16628e27dd93&amp;source=constructor"
+          width="360" height="460" title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"></iframe>
+      </div>
     </section>
     <a class="contacts__write btn" href="#">Напишите нам</a>
   </main>
