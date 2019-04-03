@@ -30,22 +30,37 @@
 
   <header class="header">
     <a href="#" class="logo-link"><img src="http://placehold.it/150x100" alt="" class="logo-img"></a>
-    <div class="header__nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="catalog.html" class="nav-link">Каталог товаров</a></li>
-        <li class="nav__item"><a href="form.html" class="nav-link">Вязание на заказ</a></li>
-        <li class="nav__item"><input type="text" placeholder="Поиск по сайту"></li>
-        <li class="nav__item modal">Корзина:<span class="nav__badge">пока пуста</span>
+    <div class="header__nav nav">
+      <button class="nav__toggle open">
+        <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120">
+          <g class="svg-menu-toggle" fill="white">
+            <path class="line line-1" d="M5 13h120v14H5z" />
+            <path class="line line-2" d="M5 50h120v14H5z" />
+            <path class="line line-3" d="M5 87h120v14H5z" />
+          </g>
+        </svg>
+      </button>
+      <ul class="nav__list navigation">
+        <li class="navigation__item"><a href="catalog.html" class="nav-link">Каталог товаров</a></li>
+        <li class="navigation__item"><a href="form.html" class="nav-link">Вязание на заказ</a></li>
+        <li class="navigation__item"><input type="text" placeholder="Поиск по сайту"></li>
+        <li class="navigation__item modal">Корзина:<span class="navigation__badge">пока пуста</span>
         </li>
       </ul>
+
     </div>
   </header>
   <main class="main main--index">
-      <h1 class="main__heading">Милые штуки ручной работы для дома</h1>
-      <ul class="catalogue-brief">
-        <li class="catalogue-brief__item"><a href="" class="catalogue-brief-link">Предметы интерьера</a></li>
-        <li class="catalogue-brief__item"><a href="" class="catalogue-brief-link">Детские игрушки</a></li>
-      </ul>
+    <h1 class="main__heading">Милые штуки ручной работы для дома</h1>
+    <div class="catalogue-brief">
+      <a href="" class="catalogue-brief-link">
+        <div class="catalogue-brief__item">Предметы интерьера</div>
+      </a>
+      <a href="" class="catalogue-brief-link">
+        <div class="catalogue-brief__item">Детские игрушки</div>
+      </a>
+    </div>
     <section class="section hit">
       <h2 class="section__heading hit__heading">Вязаные корзинки</h2>
       <p class="hit__reason">Товар недели</p>
@@ -80,26 +95,26 @@
       </picture>
 
       <p class="hit__price">Цена:<span class="hit__price-amount">990 руб.</span></p>
-      <button class="modal-cart__btn btn" id="modal__btn">Заказать</button>
+      <button class="modal-cart-btn btn">Заказать</button>
 
-      <div id="modal" class="modal-cart__block">
+      <div class="modal">
         <h2 class="modal__heading">Добавить в корзину</h2>
         <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
           autocomplete="off">
-          <div class="sizes__choice">
+          <div class="sizes">
             <h3 class="sizes__heading">Выберите размер:</h3>
 
-            <input class="sizes__option" type="checkbox" id="s-size" name="s-size" checked>
+            <input class="sizes__option" type="radio" id="s-size" name="s-size" checked>
             <label for="s-size" class="sizes__option-label">S</label>
 
-            <input class="sizes__option" type="checkbox" id="m-size" name="m-size">
+            <input class="sizes__option" type="radio" id="m-size" name="m-size">
             <label for="m-size" class="sizes__option-label">M</label>
 
-            <input class="sizes__option" type="checkbox" id="l-size" name="l-size">
+            <input class="sizes__option" type="radio" id="l-size" name="l-size">
             <label for="l-size" class="sizes__option-label">L</label>
 
           </div>
-          <button class="sizes__submit" type="submit" value="Добавить">Добавить</button>
+          <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
         </form>
       </div>
 
@@ -118,12 +133,12 @@
     <section class="section reviews">
       <h2 class="section__heading reviews__heading">Отзывы</h2>
       <ul class="reviews__list slider">
-        <li class="review__item slider__item">
-          <div class="review__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
+        <li class="reviews__item slider__item">
+          <div class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
             лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии
             сразу стали более стильнее, а также набирают больше лайков!</div>
-          <p class="review__author">Анастасия Красильникова</p>
-          <p class="review__nick">@misssssiskras</p>
+          <p class="reviews__author">Анастасия Красильникова</p>
+          <p class="reviews__nick">@misssssiskras</p>
         </li>
       </ul>
       <button class="reviews__prev" type="button">Предыдущий отзыв</button>
@@ -149,8 +164,9 @@
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A874f6ec814322c7a8513b306418dfe875a27af606a71ea7c426a16628e27dd93&amp;source=constructor"
           width="360" height="460" title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"></iframe>
       </div>
+      <a class="contacts__write btn" href="#">Напишите нам</a>
     </section>
-    <a class="contacts__write btn" href="#">Напишите нам</a>
+
   </main>
   <footer class="footer">
     <div class="footer__col footer__social">
@@ -175,7 +191,8 @@
       </ul>
     </div>
     <div class="footer__col footer__developed developed">
-      <p class="developed__text">Разработано<a class="developed__link" href="#" target="_blank">
+      <p class="developed__text">Разработано<a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive"
+          target="_blank">
           <span class="visually-hidden">htmlacademy.ru</span>
           <svg></svg>
         </a></p>
