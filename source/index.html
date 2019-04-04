@@ -8,28 +8,26 @@
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link href="css/style.css" rel="stylesheet">
-
   <meta property="og:image" content="img/placeholder.jpg">
   <meta property="og:image:height" content="518">
   <meta property="og:image:width" content="768">
-  <meta property="og:url" content="https://github.com/ChloeSilent/Sedona2">
+  <meta property="og:url" content="#">
+  <!--ИСПРАВИТЬ НА ФИНАЛЕ-->
   <meta property="og:title" content="Мишка">
   <meta property="og:description" content="HTML Academy: Мишка">
-
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
   <script>
     document.createElement("picture");
 
   </script>
   <script src="js/picturefill.min.js" async></script>
-
 </head>
 
-
 <body>
-
   <header class="header">
-    <a href="#" class="logo-link"><img src="http://placehold.it/150x100" alt="" class="logo-img"></a>
+    <a href="#" class="logo-link">
+      <img src="http://placehold.it/150x100" alt="" class="logo-img">
+    </a>
     <div class="header__nav nav">
       <button class="nav__toggle open">
         <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -42,13 +40,20 @@
         </svg>
       </button>
       <ul class="nav__list navigation">
-        <li class="navigation__item"><a href="catalog.html" class="nav-link">Каталог товаров</a></li>
-        <li class="navigation__item"><a href="form.html" class="nav-link">Вязание на заказ</a></li>
-        <li class="navigation__item"><input type="text" placeholder="Поиск по сайту"></li>
-        <li class="navigation__item modal">Корзина:<span class="navigation__badge">пока пуста</span>
+        <li class="navigation__item">
+          <a href="catalog.html" class="nav-link">Каталог товаров</a>
+        </li>
+        <li class="navigation__item">
+          <a href="form.html" class="nav-link">Вязание на заказ</a>
+        </li>
+        <li class="navigation__item">
+          <input type="text" placeholder="Поиск по сайту">
+        </li>
+        <li class="navigation__item modal">
+          Корзина:
+          <span class="navigation__badge">пока пуста</span>
         </li>
       </ul>
-
     </div>
   </header>
   <main class="main main--index">
@@ -87,32 +92,25 @@
         <source type="image/webp" media="(min-width: 768px)"
           srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
         <source type="image/webp" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
-
         <source media="(min-width: 1200px)" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
         <source media="(min-width: 768px)" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
         <img class="hit__img" width="260" height="316" src="http://placehold.it/260x316"
           srcset="http://placehold.it/260x316 2x" alt="корзинки">
       </picture>
-
       <p class="hit__price">Цена:<span class="hit__price-amount">990 руб.</span></p>
       <button class="modal-cart-btn btn">Заказать</button>
-
       <div class="modal">
         <h2 class="modal__heading">Добавить в корзину</h2>
         <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
           autocomplete="off">
           <div class="sizes">
             <h3 class="sizes__heading">Выберите размер:</h3>
-
             <input class="sizes__option" type="radio" id="s-size" name="s-size" checked>
             <label for="s-size" class="sizes__option-label">S</label>
-
             <input class="sizes__option" type="radio" id="m-size" name="m-size">
             <label for="m-size" class="sizes__option-label">M</label>
-
             <input class="sizes__option" type="radio" id="l-size" name="l-size">
             <label for="l-size" class="sizes__option-label">L</label>
-
           </div>
           <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
         </form>
@@ -166,7 +164,6 @@
       </div>
       <a class="contacts__write btn" href="#">Напишите нам</a>
     </section>
-
   </main>
   <footer class="footer">
     <div class="footer__col footer__social">
@@ -178,29 +175,32 @@
             </svg>
           </a>
         </li>
-        <li class="social__list__item"><a href="#" class="social__link social__link--fb">
+        <li class="social__list__item">
+          <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Facebook</span>
             <svg class="social__icon">
             </svg>
-          </a></li>
-        <li class="social__list__item"><a href="#" class="social__link social__link--tw">
+          </a>
+        </li>
+        <li class="social__list__item">
+          <a href="#" class="social__link social__link--tw">
             <span class="visually-hidden">Twitter</span>
             <svg class="social__icon">
             </svg>
-          </a></li>
+          </a>
+        </li>
       </ul>
     </div>
     <div class="footer__col footer__developed developed">
-      <p class="developed__text">Разработано<a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive"
-          target="_blank">
+      <p class="developed__text">
+        Разработано
+        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="visually-hidden">htmlacademy.ru</span>
           <svg></svg>
-        </a></p>
+        </a>
+      </p>
     </div>
-
   </footer>
-
-
 </body>
 
 </html>
