@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
@@ -17,18 +16,16 @@
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
   <script>
     document.createElement("picture");
-
   </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
-
 <body>
   <header class="header">
     <a href="index.html" class="logo-link">
       <img src="http://placehold.it/150x100" alt="" class="logo-img">
     </a>
     <div class="header__nav nav">
-      <button class="nav__toggle open">
+      <button type="button" class="nav__toggle open" type="button">
         <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120">
           <g class="svg-menu-toggle" fill="white">
@@ -75,26 +72,10 @@
         <a href="#" class="catalog-item__link">
           <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
         </a>
-        <p class="catalog-description">Рост 30см, вес 200гр</p>
-        <div class="catalog-item-wrapper">
-          <div class="catalog-item__price">1200 руб.</div>
-          <button class="modal-cart-btn btn">Заказать</button>
-          <div class="modal">
-            <h2 class="modal__heading">Добавить в корзину</h2>
-            <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
-              autocomplete="off">
-              <div class="sizes">
-                <h3 class="sizes__heading">Выберите размер:</h3>
-                <input class="sizes__option" type="radio" id="s-size-rabbit" name="s-size-rabbit" checked>
-                <label for="s-size-rabbit" class="sizes__option-label">S</label>
-                <input class="sizes__option" type="radio" id="m-size-rabbit" name="m-size-rabbit">
-                <label for="m-size-rabbit" class="sizes__option-label">M</label>
-                <input class="sizes__option" type="radio" id="l-size-rabbit" name="l-size-rabbit">
-                <label for="l-size-rabbit" class="sizes__option-label">L</label>
-              </div>
-              <button class="modal__submit" type="submit" >Добавить</button>
-            </form>
-          </div>
+        <p class="catalog-item__description">Рост 30см, вес 200гр</p>
+        <div class="catalog-item__wrapper">
+          <span class="catalog-item__price">1200 руб.</span>
+          <button type="button" class="modal-cart-btn btn"><span class="visualli-hidden">Заказать</span></button>
         </div>
       </li>
       <li class="catalog-item">
@@ -114,26 +95,10 @@
         <a href="#" class="catalog-item__link">
           <h2 class="catalog-item__title">Корзинка для белья</h2>
         </a>
-        <p class="catalog-description">Диаметр 15 см, высота 10 см</p>
-        <div class="catalog-item-wrapper">
-          <div class="catalog-item__price">690 руб.</div>
-          <button class="modal-cart-btn btn">Заказать</button>
-          <div class="modal">
-            <h2 class="modal__heading">Добавить в корзину</h2>
-            <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
-              autocomplete="off">
-              <div class="sizes">
-                <h3 class="sizes__heading">Выберите размер:</h3>
-                <input class="sizes__option" type="radio" id="s-size-small-busket" name="s-size-small-busket" checked>
-                <label for="s-size-small-busket" class="sizes__option-label">S</label>
-                <input class="sizes__option" type="radio" id="m-size-small-busket" name="m-size-small-busket">
-                <label for="m-size-small-busket" class="sizes__option-label">M</label>
-                <input class="sizes__option" type="radio" id="l-size-small-busket" name="l-size-small-busket">
-                <label for="l-size-small-busket" class="sizes__option-label">L</label>
-              </div>
-              <button class="modal__submit" type="submit">Добавить</button>
-            </form>
-          </div>
+        <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+        <div class="catalog-item__wrapper">
+          <span class="catalog-item__price">690 руб.</span>
+          <button type="button" class="modal-cart-btn btn"><span class="visualli-hidden">Заказать</span></button>
         </div>
       </li>
       <li class="catalog-item">
@@ -153,26 +118,10 @@
         <a href="#" class="catalog-item__link">
           <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
         </a>
-        <p class="catalog-description">Диаметр 30 см, рост 30 см</p>
-        <div class="catalog-item-wrapper">
-          <div class="catalog-item__price">1500 руб.</div>
-          <button class="modal-cart-btn btn">Заказать</button>
-          <div class="modal">
-            <h2 class="modal__heading">Добавить в корзину</h2>
-            <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
-              autocomplete="off">
-              <div class="sizes">
-                <h3 class="sizes__heading">Выберите размер:</h3>
-                <input class="sizes__option" type="radio" id="s-size-big-busket" name="s-size-big-busket" checked>
-                <label for="s-size-big-busket" class="sizes__option-label">S</label>
-                <input class="sizes__option" type="radio" id="m-size-big-busket" name="m-size-big-busket">
-                <label for="m-size-big-busket" class="sizes__option-label">M</label>
-                <input class="sizes__option" type="radio" id="l-size-big-busket" name="l-size-big-busket">
-                <label for="l-size-big-busket" class="sizes__option-label">L</label>
-              </div>
-              <button class="modal__submit" type="submit">Добавить</button>
-            </form>
-          </div>
+        <p class="catalog-item__description">Диаметр 30 см, рост 30 см</p>
+        <div class="catalog-item__wrapper">
+          <span class="catalog-item__price">1500 руб.</span>
+          <button type="button" class="modal-cart-btn btn"><span class="visualli-hidden">Заказать</span></button>
         </div>
       </li>
     </ul>
@@ -188,7 +137,7 @@
       <div class="play-btn"></div>
       <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
         появляются наши товары.</p>
-      <button class="btn video__btn">Сделать заказ</button>
+      <a class="btn video__btn" href="#">Сделать заказ</a>
     </section>
   </main>
   <footer class="footer">
@@ -225,10 +174,22 @@
         </a>
       </p>
     </div>
-
   </footer>
-
-
+  <div class="modal">
+      <h2 class="modal__heading">Добавить в корзину</h2>
+      <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
+        autocomplete="off">
+        <div class="sizes">
+          <h3 class="sizes__heading">Выберите размер:</h3>
+          <input class="sizes__option" type="radio" id="s-size" name="s-size" checked>
+          <label for="s-size" class="sizes__option-label">S</label>
+          <input class="sizes__option" type="radio" id="m-size" name="m-size">
+          <label for="m-size" class="sizes__option-label">M</label>
+          <input class="sizes__option" type="radio" id="l-size" name="l-size">
+          <label for="l-size" class="sizes__option-label">L</label>
+        </div>
+        <button type="button" class="modal__submit" type="submit">Добавить</button>
+      </form>
+    </div>
 </body>
-
 </html>

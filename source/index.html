@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
@@ -18,18 +17,16 @@
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
   <script>
     document.createElement("picture");
-
   </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
-
 <body>
   <header class="header">
     <a href="#" class="logo-link">
       <img src="http://placehold.it/150x100" alt="" class="logo-img">
     </a>
     <div class="header__nav nav">
-      <button class="nav__toggle open">
+      <button class="nav__toggle open" type="button">
         <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120">
           <g class="svg-menu-toggle" fill="white">
@@ -98,7 +95,7 @@
           srcset="http://placehold.it/260x316 2x" alt="корзинки">
       </picture>
       <p class="hit__price">Цена:<span class="hit__price-amount">990 руб.</span></p>
-      <button class="modal-cart-btn btn">Заказать</button>
+      <button type="button" modal-cart-btn btn">Заказать</button>
       <div class="modal">
         <h2 class="modal__heading">Добавить в корзину</h2>
         <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
@@ -115,7 +112,6 @@
           <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
         </form>
       </div>
-
     </section>
     <section class="section about-us">
       <h2 class="section__heading about-us__heading">Коротко о нас</h2>
@@ -132,11 +128,11 @@
       <h2 class="section__heading reviews__heading">Отзывы</h2>
       <ul class="reviews__list slider">
         <li class="reviews__item slider__item">
-          <div class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
+          <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
             лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии
-            сразу стали более стильнее, а также набирают больше лайков!</div>
-          <p class="reviews__author">Анастасия Красильникова</p>
-          <p class="reviews__nick">@misssssiskras</p>
+            сразу стали более стильнее, а также набирают больше лайков!</p>
+          <b class="reviews__author">Анастасия Красильникова</b>
+          <span class="reviews__nick">@misssssiskras</span>
         </li>
       </ul>
       <button class="reviews__prev" type="button">Предыдущий отзыв</button>
@@ -202,5 +198,4 @@
     </div>
   </footer>
 </body>
-
 </html>
