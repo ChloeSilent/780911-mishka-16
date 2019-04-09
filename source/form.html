@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link href="css/style.css" rel="stylesheet">
+  <meta property="og:image" content="img/placeholder.jpg">
+  <meta property="og:image:height" content="518">
+  <meta property="og:image:width" content="768">
+  <meta property="og:url" content="#">
+  <meta property="og:title" content="Мишка">
+  <meta property="og:description" content="HTML Academy: Мишка">
+  <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+  <script>
+    document.createElement("picture");
+
+  </script>
+  <script src="js/picturefill.min.js" async></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo-link">
+      <img src="http://placehold.it/150x100" alt="" class="logo-img"></a>
+    <div class="header__nav nav">
+      <button class="nav__toggle open" type="button">
+        <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120">
+          <g class="svg-menu-toggle" fill="white">
+            <path class="line line-1" d="M5 13h120v14H5z" />
+            <path class="line line-2" d="M5 50h120v14H5z" />
+            <path class="line line-3" d="M5 87h120v14H5z" />
+          </g>
+        </svg>
+      </button>
+      <ul class="nav__list navigation">
+        <li class="navigation__item"><a href="catalog.html" class="nav-link">Каталог товаров</a></li>
+        <li class="navigation__item"><a href="#" class="nav-link">Вязание на заказ</a></li>
+        <li class="navigation__item"><input type="text" placeholder="Поиск по сайту"></li>
+        <li class="navigation__item modal">
+          Корзина:
+          <span class="navigation__badge">пока пуста</span>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main main--form">
+    <h1 class="main-heading main-heading--form">Вязание на заказ</h1>
+    <form class="order__order order" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
+      autocomplete="off">
+      <p class="order__text"> Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы
+        уточнить детали.</p>
+      <div class="order__section type-fieldset">
+        <h2 class="order__heading">Тип</h2>
+        <input type="radio" class="type-fieldset__btn" id="accessory" name="type" value="accessory">
+        <label for="accessory" class="type-fieldset__lbl">Аксессуар для интерьера</label>
+        <input type="radio" class="type-fieldset__btn" id="toy" name="type" value="toy">
+        <label for="toy" class="type-fieldset__lbl">Детская игрушка</label>
+      </div>
+      <div class="order__section color-fieldset">
+        <h2 class="order__heading">Цвет</h2>
+        <input class="color-fieldset__btn" type="checkbox" id="white" name="white" checked>
+        <label for="white" class="color-fieldset__lbl">Белый</label>
+        <input class="color-fieldset__btn" type="checkbox" id="grey" name="grey" checked>
+        <label for="grey" class="color-fieldset__lbl">Серый</label>
+        <input class="color-fieldset__btn" type="checkbox" id="turquoise" name="turquoise">
+        <label for="turquoise" class="color-fieldset__lbl">«Тиффани»</label>
+        <input class="color-fieldset__btn" type="checkbox" id="black" name="black">
+        <label for="black" class="color-fieldset__lbl">Черный</label>
+        <input class="color-fieldset__btn" type="checkbox" id="pink" name="pink">
+        <label for="pink" class="color-fieldset__lbl">Розовый</label>
+        <input class="color-fieldset__btn" type="checkbox" id="orange" name="orange">
+        <label for="orange" class="color-fieldset__lbl">Оранжевый</label>
+      </div>
+      <div class="order__section name-fieldset">
+        <h2 class="order__heading">ФИО</h2>
+        <div class="name-fieldset__row">
+          <label for="firstName" class="name-fieldset__lbl">Имя:</label>
+          <input class="name-fieldset__input" type="text" id="firstName" name="firstName"
+            placeholder="Введите ваше имя*" minlength="2" maxlength="25" required>
+        </div>
+        <div class="name-fieldset__row">
+          <label for="secondName" class="name-fieldset__lbl">Фамилия:</label>
+          <input class="name-fieldset__input" type="text" id="secondName" name="secondName"
+            placeholder="Укажите фамилию*" minlength="2" maxlength="50" required>
+        </div>
+        <div class="name-fieldset__row">
+          <label for="fathersName" class="name-fieldset__lbl">Отчество:</label>
+          <input class="name-fieldset__input" type="text" id="fathersName" name="fathersName"
+            placeholder="Отчество, если желаете" minlength="2" maxlength="25">
+        </div>
+      </div>
+      <div class="tel-fieldset tel">
+        <label for="tel" class="order__heading">Тел</label>
+        <input type="tel" class="tel-input" pattern="\+[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" id="tel" name="tel"
+          required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+      </div>
+      <div class="mail-fieldset mail">
+        <label for="mail" class="order__heading">Тел</label>
+        <input type="email" class="mail-input" id="mail" name="mail" placeholder="Ваш Email*" required>
+      </div>
+      <div class="order__section addition">
+        <h2 class="order__heading">Доп</h2>
+        <textarea class="addition__textarea" rows="4" cols="30" name="text"
+          placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+      </div>
+      <p class="order__additional">*Поля обязательны для заполнения</p>
+      <button class="btn order__submit" type="submit">Отправить заказ</button>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="footer__col footer__social">
+      <ul class="social social__list">
+        <li class="social__list__item">
+          <a href="#" class="social__link social__link--inst">
+            <span class="visually-hidden">Instagram</span>
+            <svg class="social__icon">
+            </svg>
+          </a>
+        </li>
+        <li class="social__list__item">
+          <a href="#" class="social__link social__link--fb">
+            <span class="visually-hidden">Facebook</span>
+            <svg class="social__icon">
+            </svg>
+          </a>
+        </li>
+        <li class="social__list__item">
+          <a href="#" class="social__link social__link--tw">
+            <span class="visually-hidden">Twitter</span>
+            <svg class="social__icon">
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__col footer__developed developed">
+      <p class="developed__text">
+        Разработано
+        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="visually-hidden">htmlacademy.ru</span>
+          <svg></svg>
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
