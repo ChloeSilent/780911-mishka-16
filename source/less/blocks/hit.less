@@ -1,16 +1,24 @@
 .hit {
-  font-size: 15px;
-  line-height: 24px;
+  font-size: @fs-small;
+  line-height: @lh-small;
   font-weight: normal;
   color: @gray-dark;
 
   .hit__price {
-    font-size: 17px;
+    font-size: @fs-normal;
     font-weight: bold;
   }
 
-  .hit__description {
-    font: inherit;
+  .hit__descr {
+    list-style: none;
+  }
+
+  .hit__reason {
+    font-size: @fs-normal;
+    line-height: @lh-normal;
+    font-weight: bold;
+    color: @tiffany;
+    text-transform: uppercase;
   }
 }
 

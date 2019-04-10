@@ -36,19 +36,19 @@
           </g>
         </svg>
       </button>
-      <ul class="nav__list navigation">
-        <li class="navigation__item">
-          <a href="catalog.html" class="nav__link navigation__text">Каталог товаров</a>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">Каталог товаров</a>
         </li>
-        <li class="navigation__item">
-          <a href="form.html" class="nav__link navigation__text">Вязание на заказ</a>
+        <li class="nav__item">
+          <a href="form.html" class="nav__link">Вязание на заказ</a>
         </li>
-        <li class="navigation__item">
-          <input type="text" placeholder="Поиск по сайту" class="navigation__text navigation__search">
+        <li class="nav__item">
+          <input type="text" placeholder="Поиск по сайту" class="nav__search">
         </li>
-        <li class="navigation__item modal">
+        <li class="nav__item modal">
           Корзина:
-          <span class="navigation__badge navigation__text">пока пуста</span>
+          <span class="navigation__badge ">пока пуста</span>
         </li>
       </ul>
     </div>
@@ -56,31 +56,31 @@
   <main class="main main--index">
     <h1 class="main__heading main__heading--index">Милые штуки ручной работы для дома</h1>
     <div class="catalogue-brief">
-      <a href="#" class="catalogue-brief-link">
+      <a href="#" class="catalogue-brief__link">
         <div class="catalogue-brief__item">Предметы интерьера</div>
       </a>
-      <a href="#" class="catalogue-brief-link catalogue-brief-link--dark">
+      <a href="#" class="catalogue-brief__link catalogue-brief__link--dark">
         <div class="catalogue-brief__item">Детские игрушки</div>
       </a>
     </div>
     <section class="section hit">
       <h2 class="section__heading hit__heading">Вязаные корзинки</h2>
-      <p class="hit__reason section__text section__text--hit">Товар недели</p>
-      <p class="hit__description">
+      <p class="hit__reason">Товар недели</p>
+      <p class="hit__info">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
       </p>
-      <ul class="hit-spetifications">
-        <li class="spetification">
-          <div class="spetification__feathure">Цвет:</div>
-          <div class="spetification__val">"Тиффани"/Серый</div>
+      <ul class="hit__descr">
+        <li class="hit__feathure">
+          <div class="hit__prop">Цвет:</div>
+          <div class="hit__val">"Тиффани"/Серый</div>
         </li>
-        <li class="spetification">
-          <div class="spetification__feathure">Диаметр:</div>
-          <div class="spetification__val">25 см</div>
+        <li class="hit__feathure">
+          <div class="hit__prop">Диаметр:</div>
+          <div class="hit__val">25 см</div>
         </li>
-        <li class="spetification">
-          <div class="spetification__feathure">Высота:</div>
-          <div class="spetification__val">15 см</div>
+        <li class="hit__feathure">
+          <div class="hit__prop">Высота:</div>
+          <div class="hit__val">15 см</div>
         </li>
       </ul>
       <picture>
@@ -100,12 +100,12 @@
     <section class="section about-us">
       <h2 class="section__heading about-us__heading">Коротко о нас</h2>
       <ul class="about-us__list">
-        <li class="about-us__item about-us__eco section__text">Экологически чистые материалы</li>
-        <li class="about-us__item about-us__skandi section__text">Скандинавский стиль по российской цене</li>
-        <li class="about-us__item about-us__likes section__text">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__item about-us__love section__text">Связано вручную с любовью и умилением</li>
-        <li class="about-us__item about-us__homeland section__text">Поддержка отчественного производителя</li>
-        <li class="about-us__item about-us__pack section__text">Поставляется в подарочной упаковке</li>
+        <li class="about-us__item about-us__eco">Экологически чистые материалы</li>
+        <li class="about-us__item about-us__skandi">Скандинавский стиль по российской цене</li>
+        <li class="about-us__item about-us__likes">Увеличивает лайки на фотографиях</li>
+        <li class="about-us__item about-us__love">Связано вручную с любовью и умилением</li>
+        <li class="about-us__item about-us__homeland">Поддержка отчественного производителя</li>
+        <li class="about-us__item about-us__pack">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
     <section class="section reviews">
@@ -115,8 +115,8 @@
           <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
             лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии
             сразу стали более стильнее, а также набирают больше лайков!</p>
-          <b class="reviews__author section__text">Анастасия Красильникова</b>
-          <span class="reviews__nick section__text--normal">@misssssiskras</span>
+          <b class="reviews__author">Анастасия Красильникова</b>
+          <span class="reviews__nick">@misssssiskras</span>
         </li>
       </ul>
       <button class="reviews__prev" type="button">Предыдущий отзыв</button>
@@ -126,13 +126,13 @@
     <section class="section contacts">
       <h2 class="contacts__heading">Контакты</h2>
       <div class="contacts__text">
-        <div class="contacts__mail mail">
+        <div class="contacts__wrapper">
           <div class="contacts__type">e-mail:</div>
-          <a href="mailto:info@mimimishkashop.ru" class="mail__adress">info@mimimishkashop.ru</a>
+          <a href="mailto:info@mimimishkashop.ru" class="contacts__mail">info@mimimishkashop.ru</a>
         </div>
-        <div class="contacts__adress adress">
+        <div class="contacts__wrapper">
           <div class="contacts__type">адрес:</div>
-          <p class="adress__adress">
+          <p class="contacts__adress">
             г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
           </p>
         </div>
@@ -171,15 +171,13 @@
         </li>
       </ul>
     </div>
-    <div class="footer__col footer__developed developed">
-      <p class="developed__text">
+      <p class="footer__col footer__developed">
         Разработано
-        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="visually-hidden">htmlacademy.ru</span>
           <svg></svg>
         </a>
       </p>
-    </div>
   </footer>
   <div class="modal section">
     <h2 class="modal__heading section__heading">Добавить в корзину</h2>

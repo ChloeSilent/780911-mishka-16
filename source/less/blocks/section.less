@@ -1,26 +1,16 @@
 .section {
-  color: #000000;
+  color: @black;
 
   .section__heading {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: @fs-l;
+    line-height: @lh-xl;
     font-weight: bold;
   }
 
   .section__text {
-    font-size: 17px;
-    line-height: 20px;
+    font-size: @fs-normal;
+    line-height: @lh-normal;
     font-weight: bold;
-
-
-    &--hit {
-      color: @tiffany;
-      text-transform: uppercase;
-    }
-
-    &--normal {
-      font-weight: normal;
-    }
   }
 }
 

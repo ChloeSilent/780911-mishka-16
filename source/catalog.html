@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
@@ -16,9 +17,11 @@
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
   <script>
     document.createElement("picture");
+
   </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
+
 <body>
   <header class="header">
     <a href="index.html" class="logo-link">
@@ -35,17 +38,17 @@
           </g>
         </svg>
       </button>
-      <ul class="nav__list navigation">
-        <li class="navigation__item">
+      <ul class="nav__list">
+        <li class="nav__item">
           <a href="#" class="nav__link">Каталог товаров</a>
         </li>
-        <li class="navigation__item">
+        <li class="nav__item">
           <a href="form.html" class="nav__link">Вязание на заказ</a>
         </li>
-        <li class="navigation__item">
-          <input type="text" placeholder="Поиск по сайту">
+        <li class="nav__item">
+          <input type="text" placeholder="Поиск по сайту" class="nav__search">
         </li>
-        <li class="navigation__item modal">
+        <li class="nav__item modal">
           Корзина:
           <span class="navigation__badge">пока пуста</span>
         </li>
@@ -165,31 +168,30 @@
         </li>
       </ul>
     </div>
-    <div class="footer__col footer__developed developed">
-      <p class="developed__text">
-        Разработано
-        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="visually-hidden">htmlacademy.ru</span>
-          <svg></svg>
-        </a>
-      </p>
-    </div>
+    <p class="footer__col footer__developed">
+      Разработано
+      <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="visually-hidden">htmlacademy.ru</span>
+        <svg></svg>
+      </a>
+    </p>
   </footer>
   <div class="modal">
-      <h2 class="modal__heading">Добавить в корзину</h2>
-      <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
-        autocomplete="off">
-        <div class="sizes">
-          <h3 class="sizes__heading">Выберите размер:</h3>
-          <input class="sizes__option" type="radio" id="s-size" name="s-size" checked>
-          <label for="s-size" class="sizes__option-label">S</label>
-          <input class="sizes__option" type="radio" id="m-size" name="m-size">
-          <label for="m-size" class="sizes__option-label">M</label>
-          <input class="sizes__option" type="radio" id="l-size" name="l-size">
-          <label for="l-size" class="sizes__option-label">L</label>
-        </div>
-        <button type="button" class="modal__submit" type="submit">Добавить</button>
-      </form>
-    </div>
+    <h2 class="modal__heading">Добавить в корзину</h2>
+    <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
+      autocomplete="off">
+      <div class="sizes">
+        <h3 class="sizes__heading">Выберите размер:</h3>
+        <input class="sizes__option" type="radio" id="s-size" name="s-size" checked>
+        <label for="s-size" class="sizes__option-label">S</label>
+        <input class="sizes__option" type="radio" id="m-size" name="m-size">
+        <label for="m-size" class="sizes__option-label">M</label>
+        <input class="sizes__option" type="radio" id="l-size" name="l-size">
+        <label for="l-size" class="sizes__option-label">L</label>
+      </div>
+      <button type="button" class="modal__submit" type="submit">Добавить</button>
+    </form>
+  </div>
 </body>
+
 </html>

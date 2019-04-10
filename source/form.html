@@ -21,6 +21,7 @@
   </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
+
 <body>
   <header class="header">
     <a href="index.html" class="logo-link">
@@ -36,11 +37,17 @@
           </g>
         </svg>
       </button>
-      <ul class="nav__list navigation">
-        <li class="navigation__item"><a href="catalog.html" class="nav__link">Каталог товаров</a></li>
-        <li class="navigation__item"><a href="#" class="nav__link">Вязание на заказ</a></li>
-        <li class="navigation__item"><input type="text" placeholder="Поиск по сайту"></li>
-        <li class="navigation__item modal">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">Каталог товаров</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Вязание на заказ</a>
+        </li>
+        <li class="nav__item">
+          <input type="text" placeholder="Поиск по сайту" class="nav__search">
+        </li>
+        <li class="nav__item modal">
           Корзина:
           <span class="navigation__badge">пока пуста</span>
         </li>
@@ -138,15 +145,13 @@
         </li>
       </ul>
     </div>
-    <div class="footer__col footer__developed developed">
-      <p class="developed__text">
-        Разработано
-        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="visually-hidden">htmlacademy.ru</span>
-          <svg></svg>
-        </a>
-      </p>
-    </div>
+    <p class="footer__col footer__developed">
+      Разработано
+      <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="visually-hidden">htmlacademy.ru</span>
+        <svg></svg>
+      </a>
+    </p>
   </footer>
 </body>
 </html>
