@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
@@ -16,47 +17,43 @@
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
   <script>
     document.createElement("picture");
+
   </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
+
 <body>
   <header class="header">
     <a href="index.html" class="logo-link">
       <img src="http://placehold.it/150x100" alt="" class="logo-img">
     </a>
-    <div class="header__nav nav">
-      <button type="button" class="nav__toggle open" type="button">
-        <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120">
-          <g class="svg-menu-toggle" fill="white">
-            <path class="line line-1" d="M5 13h120v14H5z" />
-            <path class="line line-2" d="M5 50h120v14H5z" />
-            <path class="line line-3" d="M5 87h120v14H5z" />
-          </g>
-        </svg>
+    <div class="nav header__nav">
+      <button class="nav__toggle nav__open" type="button">
       </button>
-      <ul class="nav__list navigation">
-        <li class="navigation__item">
-          <a href="#" class="nav-link">Каталог товаров</a>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Каталог товаров</a>
         </li>
-        <li class="navigation__item">
-          <a href="form.html" class="nav-link">Вязание на заказ</a>
+        <li class="nav__item">
+          <a href="form.html" class="nav__link">Вязание на заказ</a>
         </li>
-        <li class="navigation__item">
-          <input type="text" placeholder="Поиск по сайту">
+        <li class="nav__item">
+          <form action="#" method="GET" class="header-search">
+            <button type="submit" class="header-search__btn"></button>
+            <input type="text" placeholder="Поиск по сайту" class="header-search__input">
+          </form>
         </li>
-        <li class="navigation__item modal">
-          Корзина:
-          <span class="navigation__badge">пока пуста</span>
+        <li class="nav__item">
+          <a href="cart.html" class="nav__link">Корзина:<span class="nav__badge ">пока пуста</span></a>
         </li>
       </ul>
     </div>
   </header>
-  <main class="main main--catalog">
-    <h1 class="main-heading main-heading--catalog">Каталог товаров</h1>
-    <ul class="catalog-list">
-      <li class="catalog-item">
-        <a href="#" class="catalog-item__link">
+  <main class="main catalog">
+    <h1 class="main__heading catalog__heading">Каталог товаров</h1>
+    <ul class="catalog__list">
+      <li class="product catalog__item">
+        <a href="#" class="product__image-link">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
@@ -65,21 +62,21 @@
             <source type="image/webp" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
             <source media="(min-width: 1200px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
             <source media="(min-width: 768px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
-            <img class="catalog-item__img" width="260" height="195" src="http://placehold.it/260x195"
+            <img class="product__img" width="260" height="195" src="http://placehold.it/260x195"
               srcset="http://placehold.it/260x195 2x" alt="Зайчик-попрыгайчик">
           </picture>
         </a>
-        <a href="#" class="catalog-item__link">
-          <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+        <a href="#" class="product__link">
+          <h2 class="product__title">Зайчик-попрыгайчик</h2>
         </a>
-        <p class="catalog-item__description">Рост 30см, вес 200гр</p>
-        <div class="catalog-item__wrapper">
-          <span class="catalog-item__price">1200 руб.</span>
-          <button type="button" class="modal-cart-btn btn"><span class="visualli-hidden">Заказать</span></button>
+        <p class="product__description">Рост 30см, вес 200гр</p>
+        <div class="product__wrapper">
+          <span class="product__price">1200 руб.</span>
+          <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
         </div>
       </li>
-      <li class="catalog-item">
-        <a href="#" class="catalog-item__link">
+      <li class="product catalog__item">
+        <a href="#" class="product__image-link">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
@@ -88,21 +85,21 @@
             <source type="image/webp" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
             <source media="(min-width: 1200px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
             <source media="(min-width: 768px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
-            <img class="catalog-item__img" width="260" height="195" src="http://placehold.it/260x195"
+            <img class="product__img" width="260" height="195" src="http://placehold.it/260x195"
               srcset="http://placehold.it/260x195 2x" alt="Корзинка для белья">
           </picture>
         </a>
-        <a href="#" class="catalog-item__link">
-          <h2 class="catalog-item__title">Корзинка для белья</h2>
+        <a href="#" class="product__link">
+          <h2 class="product__title">Корзинка для белья</h2>
         </a>
-        <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
-        <div class="catalog-item__wrapper">
-          <span class="catalog-item__price">690 руб.</span>
-          <button type="button" class="modal-cart-btn btn"><span class="visualli-hidden">Заказать</span></button>
+        <p class="product__description">Диаметр 15 см, высота 10 см</p>
+        <div class="product__wrapper">
+          <span class="product__price">690 руб.</span>
+          <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
         </div>
       </li>
-      <li class="catalog-item">
-        <a href="#" class="catalog-item__link">
+      <li class="product catalog__item">
+        <a href="#" class="product__image-link">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
@@ -111,22 +108,22 @@
             <source type="image/webp" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
             <source media="(min-width: 1200px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
             <source media="(min-width: 768px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
-            <img class="catalog-item__img" width="260" height="195" src="http://placehold.it/260x195"
+            <img class="product__img" width="260" height="195" src="http://placehold.it/260x195"
               srcset="http://placehold.it/260x195 2x" alt="Большая корзинка для игрушек">
           </picture>
         </a>
-        <a href="#" class="catalog-item__link">
-          <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+        <a href="#" class="product__title-link">
+          <h2 class="product__title">Большая корзинка для игрушек</h2>
         </a>
-        <p class="catalog-item__description">Диаметр 30 см, рост 30 см</p>
-        <div class="catalog-item__wrapper">
-          <span class="catalog-item__price">1500 руб.</span>
-          <button type="button" class="modal-cart-btn btn"><span class="visualli-hidden">Заказать</span></button>
+        <p class="product__description">Диаметр 30 см, рост 30 см</p>
+        <div class="product__wrapper">
+          <span class="product__price">1500 руб.</span>
+          <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
         </div>
       </li>
     </ul>
-    <section class="section video">
-      <h2 class="section__heading video__heding">Процесс производства</h2>
+    <section class="video">
+      <h2 class="video__heding">Процесс производства</h2>
       <video class="video__video" width="260" height="150" poster="http://placehold.it/260x150">
         <source src="#" type="video/mp4">
         <p>
@@ -141,22 +138,23 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__col footer__social">
-      <ul class="social social__list">
-        <li class="social__list__item">
+    <div class="footer__col footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
           <a href="#" class="social__link social__link--inst">
             <span class="visually-hidden">Instagram</span>
             <svg class="social__icon">
             </svg>
           </a>
         </li>
-        <li class="social__list__item">
+        <li class="social__item">
           <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Facebook</span>
             <svg class="social__icon">
             </svg>
-          </a></li>
-        <li class="social__list__item">
+          </a>
+        </li>
+        <li class="social__item">
           <a href="#" class="social__link social__link--tw">
             <span class="visually-hidden">Twitter</span>
             <svg class="social__icon">
@@ -165,31 +163,30 @@
         </li>
       </ul>
     </div>
-    <div class="footer__col footer__developed developed">
-      <p class="developed__text">
-        Разработано
-        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="visually-hidden">htmlacademy.ru</span>
-          <svg></svg>
-        </a>
-      </p>
-    </div>
+    <p class="footer__col footer__developed">
+      Разработано
+      <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="visually-hidden">htmlacademy.ru</span>
+        <svg></svg>
+      </a>
+    </p>
   </footer>
   <div class="modal">
-      <h2 class="modal__heading">Добавить в корзину</h2>
-      <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
-        autocomplete="off">
-        <div class="sizes">
-          <h3 class="sizes__heading">Выберите размер:</h3> 
-          <input class="sizes__option" type="radio" id="s-size" name="s-size" checked>
-          <label for="s-size" class="sizes__option-label">S</label>
-          <input class="sizes__option" type="radio" id="m-size" name="m-size">
-          <label for="m-size" class="sizes__option-label">M</label>
-          <input class="sizes__option" type="radio" id="l-size" name="l-size">
-          <label for="l-size" class="sizes__option-label">L</label>
-        </div>
-        <button type="button" class="modal__submit" type="submit">Добавить</button>
-      </form>
-    </div>
+    <h2 class="title-h2 modal__heading">Добавить в корзину</h2>
+    <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
+      autocomplete="off">
+      <div class="sizes">
+        <h3 class="sizes__heading">Выберите размер:</h3>
+        <input class="sizes__option" type="radio" id="s-size" name="s-size" value="s-size" checked>
+        <label for="s-size" class="sizes__option-label">S</label>
+        <input class="sizes__option" type="radio" id="m-size" name="m-size" value="m-size">
+        <label for="m-size" class="sizes__option-label">M</label>
+        <input class="sizes__option" type="radio" id="l-size" name="l-size" value="l-size">
+        <label for="l-size" class="sizes__option-label">L</label>
+      </div>
+      <button class="btn modal__btn" type="submit">Добавить</button>
+    </form>
+  </div>
 </body>
+
 </html>

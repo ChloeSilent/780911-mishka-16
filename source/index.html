@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
@@ -17,70 +18,66 @@
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
   <script>
     document.createElement("picture");
+
   </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
+
 <body>
   <header class="header">
     <a href="#" class="logo-link">
       <img src="http://placehold.it/150x100" alt="" class="logo-img">
     </a>
-    <div class="header__nav nav">
-      <button class="nav__toggle open" type="button">
-        <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120">
-          <g class="svg-menu-toggle" fill="white">
-            <path class="line line-1" d="M5 13h120v14H5z" />
-            <path class="line line-2" d="M5 50h120v14H5z" />
-            <path class="line line-3" d="M5 87h120v14H5z" />
-          </g>
-        </svg>
+    <div class="nav header__nav">
+      <button class="nav__toggle nav__open" type="button">
       </button>
-      <ul class="nav__list navigation">
-        <li class="navigation__item">
-          <a href="catalog.html" class="nav-link">Каталог товаров</a>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">Каталог товаров</a>
         </li>
-        <li class="navigation__item">
-          <a href="form.html" class="nav-link">Вязание на заказ</a>
+        <li class="nav__item">
+          <a href="form.html" class="nav__link">Вязание на заказ</a>
         </li>
-        <li class="navigation__item">
-          <input type="text" placeholder="Поиск по сайту">
+        <li class="nav__item">
+          <form action="#" method="GET" class="header-search">
+            <button type="submit" class="header-search__btn"></button>
+            <input type="text" placeholder="Поиск по сайту" class="header-search__input">
+          </form>
         </li>
-        <li class="navigation__item modal">
-          Корзина:
-          <span class="navigation__badge">пока пуста</span>
+        <li class="nav__item">
+          <a href="cart.html" class="nav__link">Корзина:<span class="nav__badge ">пока пуста</span></a>
         </li>
       </ul>
     </div>
   </header>
   <main class="main main--index">
-    <h1 class="main__heading">Милые штуки ручной работы для дома</h1>
+    <h1 class="main__heading main__heading--index">Милые штуки ручной работы для дома</h1>
     <div class="catalogue-brief">
-      <a href="" class="catalogue-brief-link">
-        <div class="catalogue-brief__item">Предметы интерьера</div>
+      <a href="#" class="catalogue-brief__link">
+        <span class="catalogue-brief__item">Предметы интерьера</span>
       </a>
-      <a href="" class="catalogue-brief-link">
-        <div class="catalogue-brief__item">Детские игрушки</div>
+      <a href="#" class="catalogue-brief__link catalogue-brief__link--dark">
+        <span class="catalogue-brief__item">Детские игрушки</span>
       </a>
     </div>
-    <section class="section hit">
-      <h2 class="section__heading hit__heading">Вязаные корзинки</h2>
+    <section class="hit">
+      <h2 class="title-h2 hit__heading">Вязаные корзинки</h2>
       <p class="hit__reason">Товар недели</p>
-      <p class="hit__Description">
+      <p class="hit__info">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
       </p>
-      <ul class="hit-spetifications">
-        <li class="spetification">
-          <div class="spetification__feathure">Цвет:</div>
-          <div class="spetification__val">"Тиффани"/Серый</div>
+      <ul class="hit__descr">
+        <li class="hit__feathure">
+          <div class="hit__prop">Цвет:</div>
+          <div class="hit__val">"Тиффани"/Серый</div>
         </li>
-        <li class="spetification">
-          <div class="spetification__feathure">Диаметр:</div>
-          <div class="spetification__val">25 см</div>
+        <li class="hit__feathure">
+          <div class="hit__prop">Диаметр:</div>
+          <div class="hit__val">25 см</div>
         </li>
-        <li class="spetification">
-          <div class="spetification__feathure">Высота:</div>
-          <div class="spetification__val">15 см</div>
+        <li class="hit__feathure">
+          <div class="hit__prop">Высота:</div>
+          <div class="hit__val">15 см</div>
         </li>
       </ul>
       <picture>
@@ -95,26 +92,10 @@
           srcset="http://placehold.it/260x316 2x" alt="корзинки">
       </picture>
       <p class="hit__price">Цена:<span class="hit__price-amount">990 руб.</span></p>
-      <button type="button" modal-cart-btn btn">Заказать</button>
-      <div class="modal">
-        <h2 class="modal__heading">Добавить в корзину</h2>
-        <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
-          autocomplete="off">
-          <div class="sizes">
-            <h3 class="sizes__heading">Выберите размер:</h3>
-            <input class="sizes__option" type="radio" id="s-size" name="s-size" checked>
-            <label for="s-size" class="sizes__option-label">S</label>
-            <input class="sizes__option" type="radio" id="m-size" name="m-size">
-            <label for="m-size" class="sizes__option-label">M</label>
-            <input class="sizes__option" type="radio" id="l-size" name="l-size">
-            <label for="l-size" class="sizes__option-label">L</label>
-          </div>
-          <button class="modal__submit" type="submit" value="Добавить">Добавить</button>
-        </form>
-      </div>
+      <button type="button" class="btn modal-cart-btn">Заказать</button>
     </section>
-    <section class="section about-us">
-      <h2 class="section__heading about-us__heading">Коротко о нас</h2>
+    <section class="about-us">
+      <h2 class="title-h2 about-us__heading">Коротко о нас</h2>
       <ul class="about-us__list">
         <li class="about-us__item about-us__eco">Экологически чистые материалы</li>
         <li class="about-us__item about-us__skandi">Скандинавский стиль по российской цене</li>
@@ -124,8 +105,8 @@
         <li class="about-us__item about-us__pack">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
-    <section class="section reviews">
-      <h2 class="section__heading reviews__heading">Отзывы</h2>
+    <section class="reviews">
+      <h2 class="title-h2 reviews__heading">Отзывы</h2>
       <ul class="reviews__list slider">
         <li class="reviews__item slider__item">
           <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
@@ -137,20 +118,20 @@
       </ul>
       <button class="reviews__prev" type="button">Предыдущий отзыв</button>
       <button class="reviews__next" type="button">Следующий отзыв</button>
-      <a class="reviews__write btn" href="#">Написать</a>
+      <a class="btn reviews__write" href="#">Написать</a>
     </section>
-    <section class="section contacts">
+    <section class="contacts">
       <h2 class="contacts__heading">Контакты</h2>
       <div class="contacts__text">
-        <div class="contacts__mail mail">
-          <div class="contacts__type">e-mail:</div>
-          <a href="mailto:info@mimimishkashop.ru" class="mail__adress btn">info@mimimishkashop.ru</a>
-        </div>
-        <div class="contacts__adress adress">
-          <div class="contacts__type">адрес:</div>
-          <p class="adress__adress">
+        <p class="contacts__wrapper">
+          <span class="contacts__type">e-mail:</span>
+          <a href="mailto:info@mimimishkashop.ru" class="contacts__mail">info@mimimishkashop.ru</a>
+        </p>
+        <div class="contacts__wrapper">
+          <span class="contacts__type">адрес:</span>
+          <address class="contacts__adress">
             г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-          </p>
+          </address>
         </div>
       </div>
       <div class="contacts__map">
@@ -158,27 +139,27 @@
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A874f6ec814322c7a8513b306418dfe875a27af606a71ea7c426a16628e27dd93&amp;source=constructor"
           width="360" height="460" title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"></iframe>
       </div>
-      <a class="contacts__write btn" href="#">Напишите нам</a>
+      <a class="btn contacts__write" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__col footer__social">
-      <ul class="social social__list">
-        <li class="social__list__item">
+    <div class="footer__col footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
           <a href="#" class="social__link social__link--inst">
             <span class="visually-hidden">Instagram</span>
             <svg class="social__icon">
             </svg>
           </a>
         </li>
-        <li class="social__list__item">
+        <li class="social__item">
           <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Facebook</span>
             <svg class="social__icon">
             </svg>
           </a>
         </li>
-        <li class="social__list__item">
+        <li class="social__item">
           <a href="#" class="social__link social__link--tw">
             <span class="visually-hidden">Twitter</span>
             <svg class="social__icon">
@@ -187,15 +168,30 @@
         </li>
       </ul>
     </div>
-    <div class="footer__col footer__developed developed">
-      <p class="developed__text">
-        Разработано
-        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="visually-hidden">htmlacademy.ru</span>
-          <svg></svg>
-        </a>
-      </p>
-    </div>
+    <p class="footer__col footer__developed">
+      Разработано
+      <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="visually-hidden">htmlacademy.ru</span>
+        <svg></svg>
+      </a>
+    </p>
   </footer>
+  <div class="modal">
+    <h2 class="title-h2 modal__heading">Добавить в корзину</h2>
+    <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
+      autocomplete="off">
+      <div class="sizes">
+        <h3 class="sizes__heading">Выберите размер:</h3>
+        <input class="sizes__option" type="radio" id="s-size" name="s-size" value="s-size" checked>
+        <label for="s-size" class="sizes__option-label">S</label>
+        <input class="sizes__option" type="radio" id="m-size" name="m-size" value="m-size">
+        <label for="m-size" class="sizes__option-label">M</label>
+        <input class="sizes__option" type="radio" id="l-size" name="l-size" value="l-size">
+        <label for="l-size" class="sizes__option-label">L</label>
+      </div>
+      <button class="btn modal__btn" type="submit">Добавить</button>
+    </form>
+  </div>
 </body>
+
 </html>
