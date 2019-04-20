@@ -1,4 +1,5 @@
 .header {
+  min-height: 397px;
   font-family: @face;
   color: @black;
   font-size: @fs-normal;
@@ -6,3 +7,42 @@
   font-weight: 700;
   background-color: #ffffff;
 }
+
+.header__logo {
+  min-height: 80px;
+}
+
+.nav__list-additional {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .header {
+    min-height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header__logo {
+    min-height: 80px;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav__list-additional {
+    display: block;
+  }
+}
+
+
+/*hh*/

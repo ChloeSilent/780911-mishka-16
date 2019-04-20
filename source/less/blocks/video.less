@@ -11,4 +11,24 @@
   color: @gray-dark;
 }
 
+@media (min-width: @desktop-width) {
+  .video {
+    display: flex;
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .video__heding {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .video__video {
+    order: -1;
+    width: 680px;
+    height: 460px;
+  }
+}
+
 /*hh*/

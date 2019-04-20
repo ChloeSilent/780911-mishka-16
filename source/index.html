@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="fonts/ptsans.woff2" as="font">
-  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <!-- <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font"> -->
+  <link rel="stylesheet" href="less/normalize.less">
   <link href="css/style.css" rel="stylesheet">
   <meta property="og:image" content="img/placeholder.jpg">
   <meta property="og:image:height" content="518">
@@ -16,35 +17,35 @@
   <meta property="og:title" content="Мишка">
   <meta property="og:description" content="HTML Academy: Мишка">
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <script>
+  <!-- <script>
     document.createElement("picture");
 
   </script>
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/picturefill.min.js" async></script> -->
 </head>
 
 <body>
   <header class="header">
-    <a href="#" class="logo-link">
-      <img src="http://placehold.it/150x100" alt="" class="logo-img header__logo">
+    <a href="#" class="logo-link header__logo">
+      <img src="http://placehold.it/100x50" alt="" class="logo-img header__logo">
     </a>
     <div class="nav header__nav">
       <button class="nav__toggle nav__open" type="button">
-      </button>
+        Навигация</button>
       <ul class="nav__list">
-        <li class="nav__item">
+        <li class="nav__item nav__catalog">
           <a href="catalog.html" class="nav__link">Каталог товаров</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__form">
           <a href="form.html" class="nav__link">Вязание на заказ</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__search">
           <form action="#" method="GET" class="header-search">
             <button type="submit" class="header-search__btn"></button>
             <input type="text" placeholder="Поиск по сайту" class="header-search__input">
           </form>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__cart">
           <a href="cart.html" class="nav__link">Корзина:<span class="nav__badge ">пока пуста</span></a>
         </li>
       </ul>
@@ -72,8 +73,10 @@
       </a>
     </div>
     <section class="hit">
-      <h2 class="title-h2 hit__heading">Вязаные корзинки</h2>
-      <p class="hit__reason">Товар недели</p>
+      <div class="hit__wrapper-heading">
+        <h2 class="title-h2 hit__heading">Вязаные корзинки</h2>
+        <p class="hit__reason">Товар недели</p>
+      </div>
       <p class="hit__info">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
       </p>
@@ -99,7 +102,7 @@
         <source type="image/webp" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
         <source media="(min-width: 1200px)" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
         <source media="(min-width: 768px)" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
-        <img class="hit__img" width="260" height="316" src="http://placehold.it/260x316"
+        <img class="hit__img" width="332" height="400" src="http://placehold.it/260x316"
           srcset="http://placehold.it/260x316 2x" alt="корзинки">
       </picture>
       <p class="hit__price">Цена:<span class="hit__price-amount">990 руб.</span></p>
@@ -127,8 +130,10 @@
           <span class="reviews__nick">@misssssiskras</span>
         </li>
       </ul>
-      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-      <button class="reviews__next" type="button">Следующий отзыв</button>
+      <div class="reviews__wrapper-btn">
+        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__next" type="button">Следующий отзыв</button>
+      </div>
       <a class="btn reviews__write" href="#">Написать</a>
     </section>
     <section class="contacts">
@@ -148,36 +153,33 @@
       <div class="contacts__map">
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A874f6ec814322c7a8513b306418dfe875a27af606a71ea7c426a16628e27dd93&amp;source=constructor"
-          width="360" height="460" title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"></iframe>
+          title="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"></iframe>
       </div>
       <a class="btn contacts__write" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="footer">
-      <a href="#" class="logo-link footer__col footer__logo">
-          <img src="http://placehold.it/150x100" alt="" class="logo-img">
-        </a>
+    <a href="#" class="logo-link footer__col footer__logo">
+      <img src="http://placehold.it/150x100" alt="" class="logo-img">
+    </a>
     <div class="footer__col footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a href="#" class="social__link social__link--inst">
             <span class="visually-hidden">Instagram</span>
-            <svg class="social__icon">
-            </svg>
+            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Facebook</span>
-            <svg class="social__icon">
-            </svg>
+            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--tw">
             <span class="visually-hidden">Twitter</span>
-            <svg class="social__icon">
-            </svg>
+                <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
       </ul>
@@ -186,7 +188,7 @@
       Разработано
       <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="visually-hidden">htmlacademy.ru</span>
-        <svg></svg>
+        <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
       </a>
     </p>
   </footer>

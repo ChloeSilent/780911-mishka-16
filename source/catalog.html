@@ -8,6 +8,7 @@
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <meta property="og:image" content="img/placeholder.jpg">
   <meta property="og:image:height" content="518">
   <meta property="og:image:width" content="768">
@@ -24,7 +25,7 @@
 
 <body>
   <header class="header">
-    <a href="index.html" class="logo-link">
+    <a href="index.html" class="logo-link header__logo">
       <img src="http://placehold.it/150x100" alt="" class="logo-img header__logo">
     </a>
     <div class="nav header__nav">
@@ -64,7 +65,7 @@
     <h1 class="main__heading catalog__heading">Каталог товаров</h1>
     <ul class="catalog__list">
       <li class="product catalog__item">
-        <a href="#" class="product__image-link">
+        <a href="#" class="product__link-image">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
@@ -77,17 +78,19 @@
               srcset="http://placehold.it/260x195 2x" alt="Зайчик-попрыгайчик">
           </picture>
         </a>
-        <a href="#" class="product__link">
-          <h2 class="product__title">Зайчик-попрыгайчик</h2>
-        </a>
-        <p class="product__description">Рост 30см, вес 200гр</p>
-        <div class="product__wrapper">
-          <span class="product__price">1200 руб.</span>
-          <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+        <div class="product__text">
+          <a href="#" class="product__link-title">
+            <h2 class="product__title">Зайчик-попрыгайчик</h2>
+          </a>
+          <p class="product__description">Рост 30см, вес 200гр</p>
+          <div class="product__wrapper">
+            <span class="product__price">1200 руб.</span>
+            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+          </div>
         </div>
       </li>
       <li class="product catalog__item">
-        <a href="#" class="product__image-link">
+        <a href="#" class="product__link-image">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
@@ -100,17 +103,19 @@
               srcset="http://placehold.it/260x195 2x" alt="Корзинка для белья">
           </picture>
         </a>
-        <a href="#" class="product__link">
-          <h2 class="product__title">Корзинка для белья</h2>
-        </a>
-        <p class="product__description">Диаметр 15 см, высота 10 см</p>
-        <div class="product__wrapper">
-          <span class="product__price">690 руб.</span>
-          <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+        <div class="product__text">
+          <a href="#" class="product__link-title">
+            <h2 class="product__title">Корзинка для белья</h2>
+          </a>
+          <p class="product__description">Диаметр 15 см, высота 10 см</p>
+          <div class="product__wrapper">
+            <span class="product__price">690 руб.</span>
+            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+          </div>
         </div>
       </li>
       <li class="product catalog__item">
-        <a href="#" class="product__image-link">
+        <a href="#" class="product__link-image">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
               srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
@@ -123,13 +128,15 @@
               srcset="http://placehold.it/260x195 2x" alt="Большая корзинка для игрушек">
           </picture>
         </a>
-        <a href="#" class="product__title-link">
-          <h2 class="product__title">Большая корзинка для игрушек</h2>
-        </a>
-        <p class="product__description">Диаметр 30 см, рост 30 см</p>
-        <div class="product__wrapper">
-          <span class="product__price">1500 руб.</span>
-          <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+        <div class="product__text">
+          <a href="#" class="product__link-title">
+            <h2 class="product__title">Большая корзинка для игрушек</h2>
+          </a>
+          <p class="product__description">Диаметр 30 см, рост 30 см</p>
+          <div class="product__wrapper">
+            <span class="product__price">1500 руб.</span>
+            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+          </div>
         </div>
       </li>
     </ul>
@@ -143,9 +150,11 @@
         </p>
       </video>
       <div class="play-btn"></div>
-      <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-        появляются наши товары.</p>
-      <a class="btn video__btn" href="#">Сделать заказ</a>
+      <div class="video-wrapper">
+        <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+          появляются наши товары.</p>
+        <a class="btn video__btn" href="#">Сделать заказ</a>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -157,22 +166,19 @@
         <li class="social__item">
           <a href="#" class="social__link social__link--inst">
             <span class="visually-hidden">Instagram</span>
-            <svg class="social__icon">
-            </svg>
+            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Facebook</span>
-            <svg class="social__icon">
-            </svg>
+            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--tw">
             <span class="visually-hidden">Twitter</span>
-            <svg class="social__icon">
-            </svg>
+            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
       </ul>

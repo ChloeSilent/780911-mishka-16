@@ -1,4 +1,5 @@
 .hit {
+  min-height: 820px;
   font-size: @fs-small;
   line-height: @lh-small;
   font-weight: 400;
@@ -20,6 +21,42 @@
   font-weight: 700;
   color: @tiffany;
   text-transform: uppercase;
+}
+
+.hit__feathure {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .hit {
+    min-height: 610px;
+    position: relative;
+  }
+
+  .hit__wrapper-heading {
+    display: flex;
+    width: 100%;
+  }
+
+  .hit__info {
+    width: 50%;
+  }
+
+  .hit__descr {
+    width: 50%;
+  }
+
+  .hit__img {
+    position: absolute;
+    right: 0;
+    top: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hit__wrapper-heading {
+    flex-direction: row-reverse;
+  }
 }
 
 /*hh*/

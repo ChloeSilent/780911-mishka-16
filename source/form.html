@@ -8,6 +8,7 @@
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <meta property="og:image" content="img/placeholder.jpg">
   <meta property="og:image:height" content="518">
   <meta property="og:image:width" content="768">
@@ -68,42 +69,65 @@
         уточнить детали.</p>
       <div class="order__fieldset-type">
         <h2 class="order__heading">Тип</h2>
-        <input type="radio" class="order__radio" id="accessory" name="type" value="accessory">
-        <label for="accessory" class="order__lbl-type">Аксессуар для интерьера</label>
-        <input type="radio" class="order__radio" id="toy" name="type" value="toy">
-        <label for="toy" class="order__lbl-type">Детская игрушка</label>
+        <div class="order__wrapper-inputs">
+          <div class="order__wrapper-type">
+            <input type="radio" class="order__radio" id="accessory" name="type" value="accessory">
+            <label for="accessory" class="order__lbl-type">Аксессуар для интерьера</label>
+          </div>
+          <div class="order__wrapper-type">
+            <input type="radio" class="order__radio" id="toy" name="type" value="toy">
+            <label for="toy" class="order__lbl-type">Детская игрушка</label>
+          </div>
+        </div>
+      </div>
       </div>
       <div class="order__fieldset-color">
         <h2 class="order__heading">Цвет</h2>
-        <input class="order__btn-color" type="checkbox" id="white" name="white" value="white" checked>
-        <label for="white" class="order__lbl-color">Белый</label>
-        <input class="order__btn-color" type="checkbox" id="grey" name="grey" value="grey" checked>
-        <label for="grey" class="order__lbl-color">Серый</label>
-        <input class="order__btn-color" type="checkbox" id="turquoise" name="turquoise" value="turquoise">
-        <label for="turquoise" class="order__lbl-color">«Тиффани»</label>
-        <input class="order__btn-color" type="checkbox" id="black" name="black" value="black">
-        <label for="black" class="order__lbl-color">Черный</label>
-        <input class="order__btn-color" type="checkbox" id="pink" name="pink" value="pink">
-        <label for="pink" class="order__lbl-color">Розовый</label>
-        <input class="order__btn-color" type="checkbox" id="orange" name="orange" value="orange">
-        <label for="orange" class="order__lbl-color">Оранжевый</label>
+        <div class="order__wrapper-checkboxes">
+          <div class="order__wrapper-color">
+            <input class="order__btn-color" type="checkbox" id="white" name="white" value="white" checked>
+            <label for="white" class="order__lbl-color">Белый</label>
+          </div>
+          <div class="order__wrapper-color">
+            <input class="order__btn-color" type="checkbox" id="grey" name="grey" value="grey" checked>
+            <label for="grey" class="order__lbl-color">Серый</label>
+          </div>
+          <div class="order__wrapper-color">
+            <input class="order__btn-color" type="checkbox" id="turquoise" name="turquoise" value="turquoise">
+            <label for="turquoise" class="order__lbl-color">«Тиффани»</label>
+          </div>
+          <div class="order__wrapper-color">
+            <input class="order__btn-color" type="checkbox" id="black" name="black" value="black">
+            <label for="black" class="order__lbl-color">Черный</label>
+          </div>
+          <div class="order__wrapper-color">
+            <input class="order__btn-color" type="checkbox" id="pink" name="pink" value="pink">
+            <label for="pink" class="order__lbl-color">Розовый</label>
+          </div>
+          <div class="order__wrapper-color">
+            <input class="order__btn-color" type="checkbox" id="orange" name="orange" value="orange">
+            <label for="orange" class="order__lbl-color">Оранжевый</label>
+          </div>
+        </div>
       </div>
       <div class="order__fieldset-name">
         <h2 class="order__heading">ФИО</h2>
-        <div class="order__wrapper-name">
-          <label for="firstName" class="order__lbl-name">Имя:</label>
-          <input class="order__input-name" type="text" id="firstName" name="firstName" placeholder="Введите ваше имя*"
-            minlength="2" maxlength="25" required>
-        </div>
-        <div class="order__wrapper-name">
-          <label for="secondName" class="order__lbl-name">Фамилия:</label>
-          <input class="order__input-name" type="text" id="secondName" name="secondName" placeholder="Укажите фамилию*"
-            minlength="2" maxlength="50" required>
-        </div>
-        <div class="order__wrapper-name">
-          <label for="fathersName" class="order__lbl-name">Отчество:</label>
-          <input class="order__input-name" type="text" id="fathersName" name="fathersName"
-            placeholder="Отчество, если желаете" minlength="2" maxlength="25">
+        <div class="order__wrapper-textes">
+          <div class="order__wrapper-name">
+            <label for="firstName" class="order__lbl-name">Имя:</label>
+            <input class="order__input-name" type="text" id="firstName" name="firstName" placeholder="Введите ваше имя*"
+              minlength="2" maxlength="25" required>
+          </div>
+          <div class="order__wrapper-name">
+            <label for="secondName" class="order__lbl-name">Фамилия:</label>
+            <input class="order__input-name" type="text" id="secondName" name="secondName"
+              placeholder="Укажите фамилию*" minlength="2" maxlength="50" required>
+          </div>
+          <div class="order__wrapper-name">
+            <label for="fathersName" class="order__lbl-name">Отчество:</label>
+            <input class="order__input-name" type="text" id="fathersName" name="fathersName"
+              placeholder="Отчество, если желаете" minlength="2" maxlength="25">
+          </div>
         </div>
       </div>
       <div class="order__fieldset-tel">
@@ -112,7 +136,7 @@
           name="tel" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
       </div>
       <div class="order__fieldset-mail">
-        <label for="mail" class="order__heading">Тел</label>
+        <label for="mail" class="order__heading">E-mail</label>
         <input type="email" class="order__input-mail" id="mail" name="mail" placeholder="Ваш Email*" required>
       </div>
       <div class="order__fieldset-addition">
@@ -120,35 +144,34 @@
         <textarea class="order__textarea" rows="4" cols="30" name="text"
           placeholder="Опишите все ваши  пожелания к заказу"></textarea>
       </div>
-      <p class="order__additional">*Поля обязательны для заполнения</p>
-      <button class="btn order__submit" type="submit">Отправить заказ</button>
+      <div class="order__wrapper-submit">
+        <p class="order__additional-info">*Поля обязательны для заполнения</p>
+        <button class="btn order__submit" type="submit">Отправить заказ</button>
+      </div>
     </form>
   </main>
   <footer class="footer">
-    <a href="index.html" class="logo-link footer__col footer__logo">
+    <a href="#" class="logo-link footer__col footer__logo">
       <img src="http://placehold.it/150x100" alt="" class="logo-img">
     </a>
-    <div class="footer__col footer__social">
-      <ul class="social social__list">
-        <li class="social__list__item">
+    <div class="footer__col footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
           <a href="#" class="social__link social__link--inst">
             <span class="visually-hidden">Instagram</span>
-            <svg class="social__icon">
-            </svg>
+            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
-        <li class="social__list__item">
+        <li class="social__item">
           <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Facebook</span>
-            <svg class="social__icon">
-            </svg>
+            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
-        <li class="social__list__item">
+        <li class="social__item">
           <a href="#" class="social__link social__link--tw">
             <span class="visually-hidden">Twitter</span>
-            <svg class="social__icon">
-            </svg>
+            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
       </ul>
@@ -157,7 +180,7 @@
       Разработано
       <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="visually-hidden">htmlacademy.ru</span>
-        <svg></svg>
+        <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
       </a>
     </p>
   </footer>
