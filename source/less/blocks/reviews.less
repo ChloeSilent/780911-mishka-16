@@ -2,10 +2,27 @@
   font-size: @fs-small;
   line-height: @lh-small;
   font-weight: 400;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-block-end: 46px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  background-size: 102%;
+}
+
+.reviews__heading {
+  margin-bottom: 25px;
 }
 
 .reviews__list {
   .list-reset;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .reviews__author {
@@ -18,6 +35,20 @@
   font-size: @fs-normal;
   line-height: @lh-normal;
   font-weight: 400;
+}
+
+.reviews__wrapper-btn {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.reviews__btn {
+  height: 50px;
+}
+
+.reviews__write {
+  display: block;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {

@@ -2,29 +2,55 @@
   font-size: @fs-small;
   line-height: @lh-xl;
   font-weight: 400;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .contacts__heading {
   font-size: 18px;
   font-weight: 700;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacts__text {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 40px;
 }
 
 .contacts__wrapper {
   display: flex;
 }
 
+
 .contacts__mail {
+  margin-left: 28px;
   color: @gray-dark;
   text-decoration-color: @tiffany;
 }
 
 .contacts__adress {
+  margin-left: 28px;
   font: inherit;
 }
 
 .contacts__map {
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
+  height: 457px;
+  margin-bottom: 40px;
+}
+
+.contacts__map iframe {
+  border: none;
+}
+
+.contacts__write {
+  display: block;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
