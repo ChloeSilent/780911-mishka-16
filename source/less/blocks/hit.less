@@ -23,6 +23,8 @@
   font-weight: 700;
   color: @tiffany;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .hit__feathure {
@@ -44,25 +46,49 @@
   .hit {
     min-height: 610px;
     position: relative;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 0 top;
+    background-size: 102%;
+    margin-top: -21px;
+    padding-top: 67px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 46px;
   }
 
   .hit__wrapper-heading {
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    margin-bottom: 46px;
+  }
+
+
+  .hit__reason {
+    width: 100px;
+    text-align: center;
   }
 
   .hit__info {
     width: 50%;
+    margin-right: auto;
   }
 
   .hit__descr {
     width: 50%;
+    margin-bottom: 60px;
   }
 
   .hit__img {
     position: absolute;
-    right: 0;
-    top: 70px;
+    right: 50px;
+    top: 160px;
+  }
+
+  .hit__price {
+    width: 40%;
+    margin-right: auto;
   }
 }
 
