@@ -1,7 +1,19 @@
+.video {
+  border: 1px solid @gray;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 34px;
+}
+
 .video__heding {
   font-size: @fs-normal;
   line-height: @lh-big;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
+  padding-left: 90px;
+  margin-bottom: 25px;
 }
 
 .video__description {
@@ -9,6 +21,23 @@
   line-height: @lh-big;
   font-weight: 400;
   color: @gray-dark;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.video__video {
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.video-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.video__btn {
+  display: block;
+  text-align: center
 }
 
 @media (min-width: @desktop-width) {

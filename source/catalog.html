@@ -25,8 +25,12 @@
 
 <body>
   <header class="header">
-    <a href="index.html" class="logo-link header__logo">
-      <img src="http://placehold.it/150x100" alt="" class="logo-img header__logo">
+    <a href="index.html" class="logo-link header__link-logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="logo-img header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+      </picture>
     </a>
     <div class="nav header__nav">
       <button class="nav__toggle nav__open" type="button">
@@ -142,7 +146,7 @@
     </ul>
     <section class="video">
       <h2 class="video__heding">Процесс производства</h2>
-      <video class="video__video" width="260" height="150" poster="http://placehold.it/260x150">
+      <video class="video__video" width="260" height="150" poster="img/video-mobile@1x.jpg">
         <source src="#" type="video/mp4">
         <p>
           Ваш браузер не поддерживает HTML5 video. Вы можете просмотреть его на
