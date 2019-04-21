@@ -57,8 +57,14 @@
     height: 524px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 45%;
+    background-position: top left;
+    background-size: 45% 87%;
     padding-top: 85px;
+  }
+
+  .reviews__text {
+    font-size: @fs-normal;
+    line-height: @lh-xl;
   }
 
   .reviews__write {
@@ -76,6 +82,15 @@
     width: 50%;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .reviews__wrapper-btn {
+    position: absolute;
+    right: 50px;
+  }
+
+  .reviews__btn {
+    width: 85px;
   }
 }
 
