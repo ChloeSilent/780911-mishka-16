@@ -1,4 +1,8 @@
 .order__text {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 15px;
   font-size: @fs-xs;
   line-height: @lh-big;
   color: @gray-dark;
@@ -46,6 +50,8 @@
 .order__fieldset-type {
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .order__wrapper {
@@ -56,12 +62,16 @@
 .order__fieldset-color {
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 
 .order__fieldset-name {
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .order__wrapper-name {
@@ -72,22 +82,61 @@
 .order__fieldset-tel {
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.order__fieldset-mail {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .order__input-mail {
   width: 100%;
 }
 
+.order__fieldset-addition {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.order__wrapper-submit {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 @media (min-width: @tablet-width) {
+  .order__heading {
+    min-width: 167px;
+  }
+
+  .order__text {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 0 top;
+    background-size: 102%;
+    margin-top: -21px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+
   .order__fieldset-type {
     flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .order__fieldset-color {
     background-color: @gray;
     flex-direction: row;
     min-height: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .order__fieldset-color .order__heading {
@@ -108,6 +157,10 @@
 
   .order__fieldset-name {
     flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .order__wrapper-name {
@@ -116,10 +169,18 @@
 
   .order__fieldset-tel {
     flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .order__fieldset-mail {
     flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .order__input-mail {
@@ -129,11 +190,20 @@
   .order__fieldset-addition {
     display: flex;
     flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .order__wrapper-submit {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .order__submit {
@@ -142,8 +212,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .order__text {
+    padding-left: 225px;
+  }
+
   .order__wrapper-color {
     width: 33%;
+  }
+
+  .order__heading {
+    padding-left: 58px;
   }
 }
 
