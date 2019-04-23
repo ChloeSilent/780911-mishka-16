@@ -1,15 +1,25 @@
 .header {
-  min-height: 397px;
+  // min-height: 397px;
   font-family: @face;
   color: @black;
   font-size: @fs-normal;
   line-height: @lh-small;
   font-weight: 700;
   background-color: #ffffff;
+  justify-content: space-between;
 }
 
 .header__link-logo {
-  min-height: 80px;
+  display: block;
+  padding: 20px;
+  border-bottom: 1px solid @gray;
+}
+
+.nav__search {
+  display: block;
+  height: 79px;
+  border-bottom: 1px solid @gray;
+  text-align: center;
   padding: 20px;
 }
 
@@ -18,7 +28,7 @@
   margin: 0 auto;
 }
 
-.nav__list-additional {
+.header__nav-additional {
   display: none;
 }
 
@@ -31,13 +41,13 @@
     margin-bottom: -89px;
   }
 
-  .header__nav {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  // .header__nav {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
 
   .header__link-logo {
-    width: 370px;
+    width: 369px;
     height: 89px;
     padding: 0;
   }
@@ -52,7 +62,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .nav__list-additional {
+  .header__nav-additional {
     display: block;
   }
 }
