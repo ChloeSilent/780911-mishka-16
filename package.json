@@ -39,7 +39,5 @@
   "engines": {
     "node": "8.15"
   },
-  "dependencies": {
-    "normalize.less": "^1.0.0"
-  }
+  "dependencies": {}
 }
