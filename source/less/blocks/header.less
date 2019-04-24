@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   // min-height: 397px;
   font-family: @face;
   color: @black;
@@ -7,6 +8,8 @@
   font-weight: 700;
   background-color: #ffffff;
   justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .header__link-logo {
@@ -30,6 +33,10 @@
   display: none;
 }
 
+.header__ship-info {
+  display: none;
+}
+
 @media (max-width: @mobile-width-only) {
   .header__link-logo {
     border-bottom: 1px solid @gray;
@@ -46,31 +53,51 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -89px;
+    background-color: transparent;
   }
 
-  // .header__nav {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
-
   .header__link-logo {
-    width: 369px;
+    width: 319px;
     height: 89px;
     padding: 0;
+    border-right: 1px solid @gray;
+    order: -5;
   }
 
   .header__logo {
-    margin: 20px auto 20px 50px;
+    margin: 20px auto 20px 0;
   }
 
-  .nav__toggle {
-    display: none;
+  .header__nav-user {
+    display: flex;
+    order: -2;
+    width: 348px;
+  }
+
+  .header__nav-user :nth-child(2n) .nav__link {
+    padding-right: 0;
+    text-align: right;
+  }
+
+  .header__ship-info {
+    display: block;
+    padding-top: 20px;
+    font-weight: 400;
   }
 }
 
 @media (min-width: @desktop-width) {
   .header__nav-additional {
     display: block;
+  }
+
+  .nav__list-main {
+    display: flex;
+    order: -5;
+  }
+
+  .header__link-logo {
+    order: -3;
   }
 }
 

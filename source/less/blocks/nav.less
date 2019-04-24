@@ -21,11 +21,6 @@
   right: 0;
 }
 
-.header__ship-info {
-  display: none;
-}
-
-
 @media (max-width: @mobile-width-only) {
   .nav__link {
     border-bottom: 1px solid @gray;
@@ -38,12 +33,6 @@
     order: 1;
   }
 
-  .header__nav-user {
-    display: flex;
-    order: -2;
-    width: 398px;
-  }
-
   .nav__search {
     width: 89px;
   }
@@ -52,10 +41,6 @@
     width: 315px;
   }
 
-  .header__link-logo {
-    order: -5;
-  }
-
   .nav__catalog {
     font-size: @fs-small;
   }
@@ -64,27 +49,12 @@
     font-size: @fs-small;
   }
 
-  .header__ship-info {
-    display: block;
-  }
-}
-
-
-@media (min-width: @tablet-width) {
-  .nav__list-main {
-    display: flex;
+  .nav__list-main :first-child {
+    padding-left: 0;
   }
 
-  .nav__catalog {
-    font-size: @fs-small;
-  }
-
-  .nav__form {
-    font-size: @fs-small;
-  }
-
-  .header__ship-info {
-    font-weight: 400;
+  .nav__toggle {
+    display: none;
   }
 }
 

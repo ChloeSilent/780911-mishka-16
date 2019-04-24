@@ -17,11 +17,9 @@
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
   <script>
     document.createElement("picture");
-
   </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
-
 <body>
   <header class="header">
     <a href="index.html" class="logo-link header__link-logo">
@@ -33,36 +31,36 @@
     </a>
     <div class="nav header__nav">
       <button class="nav__toggle nav__open" type="button">
-      </button>
-      <ul class="nav__list">
-        <li class="nav__item">
+        <span class="visually-hidden">Навигация</span></button>
+      <ul class="nav__list nav__list-main">
+        <li class="nav__item nav__catalog">
           <a href="#" class="nav__link">Каталог товаров</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__form">
           <a href="form.html" class="nav__link">Вязание на заказ</a>
         </li>
-        <li class="nav__item">
+      </ul>
+    </div>
+      <ul class="nav header__nav-user">
+        <li class="nav__item nav__search">
           <form action="#" method="GET" class="header-search">
             <button type="submit" class="header-search__btn"></button>
             <input type="text" placeholder="Поиск по сайту" class="header-search__input">
           </form>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__cart">
           <a href="cart.html" class="nav__link">Корзина:<span class="nav__badge ">пока пуста</span></a>
         </li>
       </ul>
-      <ul class="nav__list-additional">
+      <ul class="nav header__nav-additional">
         <li class="nav__item nav__item--transparent">
           <a href="" class="nav__link">Новые поступления</a>
         </li>
         <li class="nav__item nav__item--transparent">
           <a href="" class="nav__link">Распродажа</a>
         </li>
-        <li class="nav__item nav__item--transparent">
-          <span class="header__ship-info">Бесплатная доставка по России</span>
-        </li>
       </ul>
-    </div>
+      <span class="header__ship-info">Бесплатная доставка по России</span>
   </header>
   <main class="main catalog">
     <h1 class="main__heading catalog__heading">Каталог товаров</h1>
