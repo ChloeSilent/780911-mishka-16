@@ -11,7 +11,6 @@
   height: 79px;
   text-align: center;
   padding: 20px;
-  border-bottom: 1px solid @gray;
 }
 
 .nav__toggle {
@@ -24,6 +23,13 @@
 
 .nav__ship-info {
   display: none;
+}
+
+
+@media (max-width: @mobile-width-only) {
+  .nav__link {
+    border-bottom: 1px solid @gray;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -76,10 +82,10 @@
   .nav__form {
     font-size: @fs-small;
   }
-}
 
-.nav__ship-info {
-  font-weight: 400;
+  .nav__ship-info {
+    font-weight: 400;
+  }
 }
 
 @media (min-width: @desktop-width) {

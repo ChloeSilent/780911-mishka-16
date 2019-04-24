@@ -12,13 +12,11 @@
 .header__link-logo {
   display: block;
   padding: 20px;
-  border-bottom: 1px solid @gray;
 }
 
 .nav__search {
   display: block;
   height: 79px;
-  border-bottom: 1px solid @gray;
   text-align: center;
   padding: 20px;
 }
@@ -32,6 +30,15 @@
   display: none;
 }
 
+@media (max-width: @mobile-width-only) {
+  .header__link-logo {
+    border-bottom: 1px solid @gray;
+  }
+
+  .nav__search {
+    border-bottom: 1px solid @gray;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .header {
