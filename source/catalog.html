@@ -17,114 +17,133 @@
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
   <script>
     document.createElement("picture");
-
   </script>
   <script src="js/picturefill.min.js" async></script>
 </head>
-
 <body>
   <header class="header">
-    <a href="index.html" class="logo-link">
-      <img src="http://placehold.it/150x100" alt="" class="logo-img">
+    <a href="index.html" class="logo-link header__link-logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="logo-img header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+      </picture>
     </a>
     <div class="nav header__nav">
       <button class="nav__toggle nav__open" type="button">
-      </button>
-      <ul class="nav__list">
-        <li class="nav__item">
+        <span class="visually-hidden">Навигация</span></button>
+      <ul class="nav__list nav__list-main">
+        <li class="nav__item nav__catalog">
           <a href="#" class="nav__link">Каталог товаров</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__form">
           <a href="form.html" class="nav__link">Вязание на заказ</a>
         </li>
-        <li class="nav__item">
+      </ul>
+    </div>
+      <ul class="nav header__nav-user">
+        <li class="nav__item nav__search">
           <form action="#" method="GET" class="header-search">
             <button type="submit" class="header-search__btn"></button>
             <input type="text" placeholder="Поиск по сайту" class="header-search__input">
           </form>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__cart">
           <a href="cart.html" class="nav__link">Корзина:<span class="nav__badge ">пока пуста</span></a>
         </li>
       </ul>
-    </div>
+      <ul class="nav header__nav-additional">
+        <li class="nav__item nav__item--transparent">
+          <a href="" class="nav__link">Новые поступления</a>
+        </li>
+        <li class="nav__item nav__item--transparent">
+          <a href="" class="nav__link">Распродажа</a>
+        </li>
+      </ul>
+      <span class="header__ship-info">Бесплатная доставка по России</span>
   </header>
   <main class="main catalog">
     <h1 class="main__heading catalog__heading">Каталог товаров</h1>
     <ul class="catalog__list">
       <li class="product catalog__item">
-        <a href="#" class="product__image-link">
+        <a href="#" class="product__link-image">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
+              srcset="http://placehold.it/315x468 1x, http://placehold.it/315x468 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
+              srcset="http://placehold.it/334x336 1x, http://placehold.it/334x336 2x">
             <source type="image/webp" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
             <source media="(min-width: 1200px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
-            <source media="(min-width: 768px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
+            <source media="(min-width: 768px)" srcset="http://placehold.it/334x336 1x, http://placehold.it/334x336 2x">
             <img class="product__img" width="260" height="195" src="http://placehold.it/260x195"
               srcset="http://placehold.it/260x195 2x" alt="Зайчик-попрыгайчик">
           </picture>
         </a>
-        <a href="#" class="product__link">
-          <h2 class="product__title">Зайчик-попрыгайчик</h2>
-        </a>
-        <p class="product__description">Рост 30см, вес 200гр</p>
-        <div class="product__wrapper">
-          <span class="product__price">1200 руб.</span>
-          <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+        <div class="product__text">
+          <a href="#" class="product__link-title">
+            <h2 class="product__title">Зайчик-попрыгайчик</h2>
+          </a>
+          <p class="product__description">Рост 30см, вес 200гр</p>
+          <div class="product__wrapper">
+            <span class="product__price">1200 руб.</span>
+            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+          </div>
         </div>
       </li>
       <li class="product catalog__item">
-        <a href="#" class="product__image-link">
+        <a href="#" class="product__link-image">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
+              srcset="http://placehold.it/315x468 1x, http://placehold.it/315x468 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
+              srcset="http://placehold.it/334x336 1x, http://placehold.it/334x336 2x">
             <source type="image/webp" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
-            <source media="(min-width: 1200px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
+            <source media="(min-width: 1200px)" srcset="http://placehold.it/315x468 1x, http://placehold.it/315x468 2x">
             <source media="(min-width: 768px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
             <img class="product__img" width="260" height="195" src="http://placehold.it/260x195"
               srcset="http://placehold.it/260x195 2x" alt="Корзинка для белья">
           </picture>
         </a>
-        <a href="#" class="product__link">
-          <h2 class="product__title">Корзинка для белья</h2>
-        </a>
-        <p class="product__description">Диаметр 15 см, высота 10 см</p>
-        <div class="product__wrapper">
-          <span class="product__price">690 руб.</span>
-          <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+        <div class="product__text">
+          <a href="#" class="product__link-title">
+            <h2 class="product__title">Корзинка для белья</h2>
+          </a>
+          <p class="product__description">Диаметр 15 см, высота 10 см</p>
+          <div class="product__wrapper">
+            <span class="product__price">690 руб.</span>
+            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+          </div>
         </div>
       </li>
       <li class="product catalog__item">
-        <a href="#" class="product__image-link">
+        <a href="#" class="product__link-image">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
+              srcset="http://placehold.it/315x468 1x, http://placehold.it/315x468 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
+              srcset="http://placehold.it/334x336 1x, http://placehold.it/334x336 2x">
             <source type="image/webp" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
-            <source media="(min-width: 1200px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
+            <source media="(min-width: 1200px)" srcset="http://placehold.it/315x468 1x, http://placehold.it/315x468 2x">
             <source media="(min-width: 768px)" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x">
             <img class="product__img" width="260" height="195" src="http://placehold.it/260x195"
               srcset="http://placehold.it/260x195 2x" alt="Большая корзинка для игрушек">
           </picture>
         </a>
-        <a href="#" class="product__title-link">
-          <h2 class="product__title">Большая корзинка для игрушек</h2>
-        </a>
-        <p class="product__description">Диаметр 30 см, рост 30 см</p>
-        <div class="product__wrapper">
-          <span class="product__price">1500 руб.</span>
-          <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+        <div class="product__text">
+          <a href="#" class="product__link-title">
+            <h2 class="product__title">Большая корзинка для игрушек</h2>
+          </a>
+          <p class="product__description">Диаметр 30 см, рост 30 см</p>
+          <div class="product__wrapper">
+            <span class="product__price">1500 руб.</span>
+            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+          </div>
         </div>
       </li>
     </ul>
     <section class="video">
       <h2 class="video__heding">Процесс производства</h2>
-      <video class="video__video" width="260" height="150" poster="http://placehold.it/260x150">
+      <video class="video__video" width="260" height="150">
         <source src="#" type="video/mp4">
         <p>
           Ваш браузер не поддерживает HTML5 video. Вы можете просмотреть его на
@@ -132,33 +151,35 @@
         </p>
       </video>
       <div class="play-btn"></div>
-      <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-        появляются наши товары.</p>
-      <a class="btn video__btn" href="#">Сделать заказ</a>
+      <div class="video-wrapper">
+        <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+          появляются наши товары.</p>
+        <a class="btn video__btn" href="#">Сделать заказ</a>
+      </div>
     </section>
   </main>
   <footer class="footer">
+    <a href="index.html" class="logo-link footer__col footer__logo">
+      <img class="logo-img footer__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+    </a>
     <div class="footer__col footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a href="#" class="social__link social__link--inst">
             <span class="visually-hidden">Instagram</span>
-            <svg class="social__icon">
-            </svg>
+            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Facebook</span>
-            <svg class="social__icon">
-            </svg>
+            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--tw">
             <span class="visually-hidden">Twitter</span>
-            <svg class="social__icon">
-            </svg>
+            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
           </a>
         </li>
       </ul>
@@ -167,7 +188,7 @@
       Разработано
       <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="visually-hidden">htmlacademy.ru</span>
-        <svg></svg>
+        <img class="footer__logo-academy" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
       </a>
     </p>
   </footer>

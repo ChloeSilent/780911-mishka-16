@@ -7,10 +7,13 @@
 }
 
 .catalogue-brief__link {
+  min-height: 102px;
+  width: 100%;
   display: block;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
   padding-left: 30px;
+  padding-right: 150px;
   text-decoration: none;
   color: #ffffff;
   background-color: @tiffany;
@@ -19,4 +22,37 @@
     background-color: @tiffany-dark;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .catalogue-brief {
+    display: flex;
+    margin-top: -118px;
+    font-size: @fs-big-t;
+    line-height: @lh-xl;
+  }
+
+  .catalogue-brief__link {
+    min-height: 120px;
+    width: 50%;
+  }
+
+  .catalogue-brief__link--left {
+    margin-left: 50px;
+  }
+
+  .catalogue-brief__link--right {
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalogue-brief__link--left {
+    padding-right: 83px;
+  }
+
+  .catalogue-brief__link--right {
+    padding-right: 83px;
+  }
+}
+
 /*the end*/

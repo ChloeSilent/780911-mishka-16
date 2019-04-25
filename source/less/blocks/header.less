@@ -1,8 +1,105 @@
 .header {
+  position: relative;
+  // min-height: 397px;
   font-family: @face;
   color: @black;
   font-size: @fs-normal;
   line-height: @lh-small;
   font-weight: 700;
   background-color: #ffffff;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
 }
+
+.header__link-logo {
+  display: block;
+  padding: 20px;
+}
+
+.nav__search {
+  display: block;
+  height: 79px;
+  text-align: center;
+  padding: 20px;
+}
+
+.header__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.header__nav-additional {
+  display: none;
+}
+
+.header__ship-info {
+  display: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .header__link-logo {
+    border-bottom: 1px solid @gray;
+  }
+
+  .nav__search {
+    border-bottom: 1px solid @gray;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    min-height: 178px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -89px;
+    background-color: transparent;
+  }
+
+  .header__link-logo {
+    width: 319px;
+    height: 89px;
+    padding: 0;
+    border-right: 1px solid @gray;
+    order: -5;
+  }
+
+  .header__logo {
+    margin: 20px auto 20px 0;
+  }
+
+  .header__nav-user {
+    display: flex;
+    order: -2;
+    width: 348px;
+  }
+
+  .header__nav-user :nth-child(2n) .nav__link {
+    padding-right: 0;
+    text-align: right;
+  }
+
+  .header__ship-info {
+    display: block;
+    padding-top: 20px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__nav-additional {
+    display: flex;
+  }
+
+  .nav__list-main {
+    display: flex;
+  }
+
+
+  .header__nav {
+    order: -6;
+  }
+}
+
+
+/*hh*/

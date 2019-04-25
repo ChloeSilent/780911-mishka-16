@@ -1,12 +1,38 @@
 .footer {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: @fs-big;
   line-height: 19px;
   font-weight: 700;
   color: @gray-dark;
+  background-color: @gray;
 }
 
 .footer__developed {
   font: inherit;
   color: @black;
 }
+
+
+.footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+  }
+
+  .footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    justify-content: space-between;
+  }
+}
+
 /*hh*/

@@ -1,3 +1,14 @@
+.about-us {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 top;
+  background-size: 102%;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
 .about-us__list {
   .list-reset;
 }
@@ -7,7 +18,40 @@
   line-height: @lh-normal;
   font-weight: 700;
   color: @black;
+  min-height: 126px;
+  padding-top: 90px;
 }
 
+@media (min-width: @tablet-width) {
+  .about-us {
+    height: 650px;
+  }
+
+  .about-us__list {
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .about-us__item {
+    width: 50%;
+    height: 150px;
+    font-size: @fs-big-t;
+    line-height: @lh-normal-t;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us {
+    padding-top: 90px;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
+  .about-us__item {
+    width: 44%;
+  }
+}
 
 /*hh*/
