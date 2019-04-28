@@ -21,6 +21,39 @@
 
   </script>
   <script src="js/picturefill.min.js" async></script> -->
+
+  <!-- Pixel Glass -->
+<style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию мобильный макет */
+      background-image: url("pixel-perfect/mishka-index-mobile--open.png");
+    }
+    /* Планшет */
+    @media (min-width: 760px) {
+      html {
+        /* Планшетный макет */
+        background-image: url("pixel-perfect/mishka-index-tablet.jpg");
+      }
+    }
+    /* Десктоп */
+    @media (min-width: 960px) {
+      html {
+        /* Десктопный макет */
+        background-image: url("pixel-perfect/mishka-index-desktop.jpg");
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+  </style>
+  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+
+
 </head>
 <body>
   <header class="header">
@@ -33,7 +66,10 @@
     </a>
     <div class="nav header__nav">
       <button class="nav__toggle nav__open" type="button">
-        <span class="visually-hidden">Навигация</span></button>
+        <span class="visually-hidden">Навигация</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.514px" height="20.512px" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
+          <polygon fill="#231F20" points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 "/>
+        </svg>
+        </button>
       <ul class="nav__list nav__list-main">
         <li class="nav__item nav__catalog">
           <a href="catalog.html" class="nav__link">Каталог товаров</a>
@@ -45,13 +81,10 @@
     </div>
       <ul class="nav header__nav-user">
         <li class="nav__item nav__search">
-          <form action="#" method="GET" class="header-search">
-            <button type="submit" class="header-search__btn"></button>
-            <input type="text" placeholder="Поиск по сайту" class="header-search__input">
-          </form>
+              <a href="#" class="nav__link">Поиск по сайту</a>
         </li>
         <li class="nav__item nav__cart">
-          <a href="cart.html" class="nav__link">Корзина:<span class="nav__badge ">пока пуста</span></a>
+          <a href="cart.html" class="nav__link">Корзина:<span class="nav__badge "> пока пуста</span></a>
         </li>
       </ul>
       <ul class="nav header__nav-additional">
