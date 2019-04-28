@@ -1,6 +1,11 @@
+.header__nav-user,
+.header__nav-additional {
+  .list-reset;
+}
+
+
 .header {
   position: relative;
-  // min-height: 397px;
   font-family: @face;
   color: @black;
   font-size: @fs-normal;
@@ -22,15 +27,6 @@
   display: block;
   margin: 0 auto;
 }
-
-.header-search__btn {
-  height: 75px;
-  width: 75px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-
 
 .header-search {
   display: flex;
@@ -56,7 +52,6 @@
 
 @media (min-width: @tablet-width) {
   .header {
-    min-height: 178px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -89px;
@@ -64,47 +59,74 @@
   }
 
   .header__link-logo {
-    width: 319px;
+    width: 48%;
     height: 89px;
     padding: 0;
     border-right: 1px solid @gray;
+    border-bottom: 1px solid #f1f1f1;
     order: -5;
   }
 
   .header__logo {
-    margin: 20px auto 20px 0;
+    width: 30%;
+    margin: 23px auto 20px 50px;
   }
 
   .header__nav-user {
     display: flex;
     order: -2;
-    width: 348px;
-  }
-
-  .header__nav-user :nth-child(2n) .nav__link {
-    padding-right: 0;
-    text-align: right;
+    // width: 348px;
+    width: 52%;
+    border-bottom: 1px solid #f1f1f1;
+    height: 88px;
   }
 
   .header__ship-info {
     display: block;
-    padding-top: 20px;
+    padding-top: 17px;
+    padding-right: 50px;
+    font-size: @fs-small;
+    line-height: @lh-big;
     font-weight: 400;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .header {
+    justify-content: flex-start;
+  }
+
   .header__nav-additional {
     display: flex;
+    padding-left: 50px;
+    padding-top: 17px;
   }
 
   .nav__list-main {
     display: flex;
   }
 
-
   .header__nav {
     order: -6;
+  }
+
+  .header__link-logo {
+    width: 20%;
+    padding: 9px 39px 0;
+  }
+
+  .header__logo {
+    width: 100%;
+    margin: 0;
+  }
+
+  .header__nav-user {
+    width: 34.9%;
+    margin-left: 58px;
+  }
+
+  .header__ship-info {
+    margin-left: auto;
   }
 }
 

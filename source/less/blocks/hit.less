@@ -4,7 +4,16 @@
   line-height: @lh-small;
   font-weight: 400;
   color: @gray-dark;
-  padding: 30px 30px;
+  padding: 30px;
+  padding-top: 28px;
+}
+
+.hit__heading {
+  margin-bottom: 5px;
+}
+
+.hit__wrapper-heading {
+  margin-bottom: 22px;
 }
 
 .hit__price {
@@ -29,8 +38,9 @@
 
 .hit__feathure {
   display: flex;
-  height: 50px;
+  min-height: 50px;
   padding-top: 10px;
+  margin-bottom: 22px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -39,7 +49,7 @@
 }
 
 .hit__val {
-  padding-left: 10px;
+  padding-left: 6px;
 }
 
 @media (min-width: @tablet-width) {
@@ -49,7 +59,7 @@
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: no-repeat;
     background-position: 0 top;
-    background-size: 102%;
+    background-size: 100%;
     margin-top: -21px;
     padding-top: 67px;
     padding-left: 50px;
@@ -99,6 +109,8 @@
 @media (min-width: @desktop-width) {
   .hit {
     padding-top: 134px;
+    background-position: 23px top;
+    margin-top: -26px;
   }
 
   .hit__wrapper-heading {

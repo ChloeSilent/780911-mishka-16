@@ -1,6 +1,4 @@
-.nav__list,
-.header__nav-user,
-.header__nav-additional {
+.nav__list {
   .list-reset;
 }
 
@@ -8,19 +6,32 @@
   display: block;
   text-decoration: none;
   color: @black;
-  height: 79px;
   text-align: left;
-  padding-right: 18px;
-  padding-top: 25px;
-  padding-left: 75px;
-  padding-bottom: 23px;
 }
 
 .nav__search {
-  display: block;
+  display: flex;
   height: 79px;
-  text-align: center;
-  // padding: 20px;
+  padding-left: 32px;
+  align-items: center;
+}
+
+.nav__cart {
+  display: flex;
+  height: 79px;
+  padding-left: 32px;
+  align-items: center;
+}
+
+.nav__search .nav__link {
+  padding-left: 27px;
+  padding-top: 26px;
+}
+
+.nav__cart .nav__link {
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 25px;
 }
 
 .nav__toggle {
@@ -36,21 +47,64 @@
 
 @media (max-width: @mobile-width-only) {
   .nav__link {
+    padding-right: 18px;
+    padding-left: 75px;
+    padding-bottom: 23px;
+  }
+
+  .nav__catalog .nav__link {
     border-bottom: 1px solid @gray;
+    min-height: 79px;
+    padding-top: 25px;
+  }
+
+  .nav__form .nav__link {
+    border-bottom: 1px solid @gray;
+    min-height: 79px;
+    padding-top: 25px;
+  }
+
+  .nav__search .nav__link {
+    border-bottom: 1px solid @gray;
+    min-height: 79px;
+    padding-top: 25px;
+  }
+
+  .nav__cart .nav__link {
+    border-bottom: 1px solid @gray;
+    min-height: 79px;
+    padding-top: 25px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .nav__list-main {
     display: flex;
+    padding-left: 50px;
   }
 
+
   .nav__search {
-    width: 89px;
+    // width: 88px;
+    width: 21.66%;
+    height: auto;
+    padding-left: 35px;
+    border-right: 1px solid #f1f1f1;
+  }
+
+  .nav__search .nav__link {
+    display: none;
   }
 
   .nav__cart {
-    width: 315px;
+    width: 77.34%;
+    padding-left: 31px;
+    height: auto;
+  }
+
+  .nav__cart .nav__link {
+    padding-left: 30px;
+    padding-top: 22px;
   }
 
   .nav__catalog {
@@ -68,6 +122,16 @@
   .nav__toggle {
     display: none;
   }
+
+  .nav__form .nav__link {
+    padding-top: 16px;
+    padding-right: 36px;
+  }
+
+  .nav__catalog .nav__link {
+    padding-top: 16px;
+    padding-right: 36px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -77,6 +141,23 @@
 
   .nav__item--transparent {
     font-size: @fs-small;
+  }
+
+  .nav__item--transparent .nav__link {
+    margin-right: 62px;
+  }
+
+  .nav__form .nav__link {
+    padding-top: 31px;
+    padding-left: 35px;
+  }
+
+  .nav__catalog .nav__link {
+    padding-top: 31px;
+  }
+
+  .nav__cart .nav__link {
+    padding-top: 0;
   }
 }
 
