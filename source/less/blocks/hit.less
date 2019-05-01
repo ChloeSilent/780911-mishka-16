@@ -5,25 +5,21 @@
   font-weight: 400;
   color: @gray-dark;
   padding: 30px;
-  padding-top: 28px;
+  padding-top: 27px;
 }
 
 .hit__heading {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .hit__wrapper-heading {
   margin-bottom: 22px;
 }
 
-.hit__price {
-  font-size: @fs-normal;
-  font-weight: 700;
-  text-align: center;
-}
-
 .hit__descr {
   .list-reset;
+  margin-bottom: 29px;
+  padding-top: 2px;
 }
 
 .hit__reason {
@@ -38,9 +34,8 @@
 
 .hit__feathure {
   display: flex;
-  min-height: 50px;
-  padding-top: 10px;
-  margin-bottom: 22px;
+  padding-top: 8px;
+  padding-bottom: 7px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -52,6 +47,21 @@
   padding-left: 6px;
 }
 
+.hit__img {
+  width: 260px;
+  // height: 315px;
+  margin-bottom: 18px;
+}
+
+.hit__price {
+  font-size: @fs-normal;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
+}
+
 @media (min-width: @tablet-width) {
   .hit {
     min-height: 610px;
@@ -61,8 +71,8 @@
     background-position: 0 top;
     background-size: 100%;
     margin-top: -21px;
-    padding-top: 67px;
-    padding-left: 50px;
+    padding-top: 56px;
+    padding-left: 47px;
     padding-right: 50px;
     padding-bottom: 46px;
   }
@@ -71,38 +81,61 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 46px;
+    margin-bottom: 44px;
   }
 
 
   .hit__reason {
     width: 100px;
     text-align: center;
+    margin-right: 13px;
+    padding-top: 12px;
+    line-height: 18px;
   }
 
   .hit__info {
-    width: 50%;
+    width: 44%;
+    margin: 0;
     margin-right: auto;
+    margin-left: 2px;
+    margin-bottom: 35px;
+    padding: 0;
     font-size: @fs-normal;
     line-height: @lh-xl;
   }
 
   .hit__descr {
     width: 50%;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
+    margin-left: 2px;
     line-height: @lh-normal;
+  }
+
+  .hit__feathure {
+    padding-bottom: 11px;
+  }
+
+  .hit__prop {
+    width: 27%;
+  }
+
+  .hit__val {
+    padding-left: 7px;
   }
 
   .hit__img {
     position: absolute;
     right: 50px;
-    top: 160px;
+    top: 166px;
+    width: 333px;
+    // height: 404px;
   }
 
   .hit__price {
-    width: 40%;
+    width: 44%;
     margin-right: auto;
     font-size: @fs-big-t;
+    margin-bottom: 34px;
   }
 }
 
