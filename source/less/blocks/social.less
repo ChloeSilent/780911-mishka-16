@@ -6,12 +6,20 @@
   padding-right: 50px;
 }
 
-// .social__item {
-//   width: 33.33%;
-// }
-
 .social__link {
   text-decoration: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .social__list :not(:last-child) {
+    margin-right: 26px;
+  }
 }
 
 /*рр*/

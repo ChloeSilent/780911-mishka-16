@@ -2,6 +2,7 @@
   padding-top: 17px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 20px;
   font-size: @fs-big;
   line-height: 19px;
   font-weight: 700;
@@ -11,9 +12,13 @@
 
 .footer__developed {
   font: inherit;
+  margin: 0;
+  padding: 0;
   color: @black;
   padding-left: 38px;
   padding-right: 38px;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -21,13 +26,35 @@
   display: none;
 }
 
+.footer__social {
+  margin-bottom: 32px;
+}
+
+.footer__link {
+  margin-left: 20px;
+}
+
+
 @media (min-width: @tablet-width) {
   .footer {
     display: flex;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 44px;
+  }
+
+  .footer__developed {
+    padding-right: 0;
   }
 
   .footer__logo {
     display: block;
+    margin-right: 69px;
+  }
+
+  .footer__social {
+    margin-bottom: 0;
   }
 }
 
