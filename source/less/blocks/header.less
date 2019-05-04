@@ -54,7 +54,7 @@
   .header {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -42px;
+    margin-bottom: -43px;
     background-color: transparent;
   }
 
@@ -69,21 +69,22 @@
 
   .header__logo {
     width: 30%;
+    max-width: 140px;
     margin: 23px auto 20px 50px;
   }
 
   .header__nav-user {
     display: flex;
     order: -2;
-    // width: 348px;
+    padding-bottom: 2px;
     width: 52%;
     border-bottom: 1px solid #f1f1f1;
-    height: 87px;
+    height: 88px;
   }
 
   .header__ship-info {
     display: block;
-    padding-top: 17px;
+    padding-top: 18px;
     padding-right: 50px;
     font-size: @fs-small;
     line-height: @lh-big;
@@ -119,6 +120,7 @@
   .header__logo {
     width: 100%;
     margin: 0;
+    max-width: none;
   }
 
   .header__nav-user {

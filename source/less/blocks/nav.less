@@ -9,6 +9,15 @@
   text-align: left;
 }
 
+.nav__link:hover {
+  color: @menu-hover;
+}
+
+.nav__link:active,
+.nav__link:focus {
+  color: @menu-active;
+}
+
 .nav__search {
   display: flex;
   height: 79px;
@@ -83,7 +92,6 @@
     padding-left: 50px;
   }
 
-
   .nav__search {
     // width: 88px;
     width: 21.66%;
@@ -124,12 +132,12 @@
   }
 
   .nav__form .nav__link {
-    padding-top: 19px;
+    padding-top: 18px;
     padding-right: 36px;
   }
 
   .nav__catalog .nav__link {
-    padding-top: 19px;
+    padding-top: 18px;
     padding-right: 36px;
   }
 }

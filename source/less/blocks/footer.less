@@ -27,8 +27,21 @@
 }
 
 .footer__social {
-  margin-bottom: 32px;
+  margin-bottom: 37px;
+  position: relative;
 }
+
+@media (max-width: @mobile-width-only) {
+  .footer__social::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid @gray-dark;
+    bottom: -21px;
+    left: 0;
+  }
+}
+
 
 .footer__link {
   margin-left: 20px;
@@ -79,12 +92,16 @@
 
 @media (min-width: @desktop-width) {
   .footer__developed span {
+    padding-top: 12px;
+  }
+
+  .footer__developed--form span {
     padding-top: 10px;
   }
 
   .footer__link {
     margin-left: 22px;
-}
+  }
 }
 
 /*hh*/
