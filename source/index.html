@@ -21,7 +21,42 @@
 
   </script>
   <script src="js/picturefill.min.js" async></script> -->
+
+  <!-- Pixel Glass -->
+  <!-- <style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию мобильный макет */
+      background-image: url("pixel-perfect/mishka-index-mobile--open.png");
+    }
+
+    /* Планшет */
+    @media (min-width: 760px) {
+      html {
+        /* Планшетный макет */
+        background-image: url("pixel-perfect/mishka-index-tablet.jpg");
+      }
+    }
+
+    /* Десктоп */
+    @media (min-width: 960px) {
+      html {
+        /* Десктопный макет */
+        background-image: url("pixel-perfect/mishka-index-desktop.jpg");
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+
+  </style>
+  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+  <script src="../node_modules/pixel-glass/script.js"></script> -->
+  <!-- // Pixel Glass -->
 </head>
+
 <body>
   <header class="header">
     <a href="#" class="logo-link header__link-logo">
@@ -33,7 +68,13 @@
     </a>
     <div class="nav header__nav">
       <button class="nav__toggle nav__open" type="button">
-        <span class="visually-hidden">Навигация</span></button>
+        <span class="visually-hidden">Навигация</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.514px" height="20.512px"
+          viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
+          <polygon fill="#231F20"
+            points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 " />
+        </svg>
+      </button>
       <ul class="nav__list nav__list-main">
         <li class="nav__item nav__catalog">
           <a href="catalog.html" class="nav__link">Каталог товаров</a>
@@ -43,35 +84,44 @@
         </li>
       </ul>
     </div>
-      <ul class="nav header__nav-user">
-        <li class="nav__item nav__search">
-          <form action="#" method="GET" class="header-search">
-            <button type="submit" class="header-search__btn"></button>
-            <input type="text" placeholder="Поиск по сайту" class="header-search__input">
-          </form>
-        </li>
-        <li class="nav__item nav__cart">
-          <a href="cart.html" class="nav__link">Корзина:<span class="nav__badge ">пока пуста</span></a>
-        </li>
-      </ul>
-      <ul class="nav header__nav-additional">
-        <li class="nav__item nav__item--transparent">
-          <a href="" class="nav__link">Новые поступления</a>
-        </li>
-        <li class="nav__item nav__item--transparent">
-          <a href="" class="nav__link">Распродажа</a>
-        </li>
-      </ul>
-      <span class="header__ship-info">Бесплатная доставка по России</span>
+    <ul class="nav header__nav-user">
+      <li class="nav__item nav__search">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6"
+          enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+          <path fill="#231F20"
+            d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z" />
+        </svg>
+        <a href="#" class="nav__link">Поиск по сайту</a>
+      </li>
+      <li class="nav__item nav__cart">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849"
+          enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+          <path fill="#231F20"
+            d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z" />
+        </svg>
+        <a href="#" class="nav__link">Корзина:<span class="nav__badge "> пока пуста</span></a>
+      </li>
+    </ul>
+    <ul class="nav header__nav-additional">
+      <li class="nav__item nav__item--transparent">
+        <a href="" class="nav__link">Новые поступления</a>
+      </li>
+      <li class="nav__item nav__item--transparent">
+        <a href="" class="nav__link">Распродажа</a>
+      </li>
+    </ul>
+    <span class="header__ship-info">Бесплатная доставка по России</span>
   </header>
   <main class="main main--index">
-    <h1 class="main__heading main__heading--index">Милые штуки ручной работы для дома</h1>
+    <h1 class="main__heading main__heading--index">Милые штуки ручной<br /> работы для дома</h1>
     <div class="catalogue-brief">
       <a href="#" class="catalogue-brief__link catalogue-brief__link--left">
-        <span class="catalogue-brief__item">Предметы интерьера</span>
+        <span class="catalogue-brief__item">Предметы <br />интерьера</span>
       </a>
       <a href="#" class="catalogue-brief__link catalogue-brief__link--dark catalogue-brief__link--right">
-        <span class="catalogue-brief__item">Детские игрушки</span>
+        <span class="catalogue-brief__item">Детские <br />игрушки</span>
       </a>
     </div>
     <section class="hit">
@@ -80,12 +130,12 @@
         <p class="hit__reason">Товар недели</p>
       </div>
       <p class="hit__info">
-        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        Экологически чистая пряжа,<br /> ручная работа. Доступны в шести<br /> расцветках, и трех размерах.
       </p>
       <ul class="hit__descr">
         <li class="hit__feathure">
           <div class="hit__prop">Цвет:</div>
-          <div class="hit__val">"Тиффани"/Серый</div>
+          <div class="hit__val">«Тиффани»/Серый</div>
         </li>
         <li class="hit__feathure">
           <div class="hit__prop">Диаметр:</div>
@@ -104,21 +154,21 @@
         <source type="image/webp" srcset="http://placehold.it/260x316 1x, http://placehold.it/260x316 2x">
         <source media="(min-width: 1200px)" srcset="triple-set-desktop@1x.jpg 1x, triple-set-desktop@1x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@1x.jpg 2x">
-        <img class="hit__img" width="332" height="400" src="img/triple-set-mobile@1x.jpg"
+        <img class="hit__img" width="260" height="315" src="img/triple-set-mobile@1x.jpg"
           srcset="img/triple-set-mobile@1x.jpg 2x" alt="корзинки">
       </picture>
       <p class="hit__price">Цена: <span class="hit__price-amount">990 руб.</span></p>
       <button type="button" class="btn modal-cart-btn">Заказать</button>
     </section>
     <section class="about-us">
-      <h2 class="title-h2 about-us__heading">Коротко о нас</h2>
+      <h2 class="title-h2 about-us__heading">Коротко о нас:</h2>
       <ul class="about-us__list">
-        <li class="about-us__item about-us__eco">Экологически чистые материалы</li>
-        <li class="about-us__item about-us__skandi">Скандинавский стиль по российской цене</li>
-        <li class="about-us__item about-us__likes">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__item about-us__love">Связано вручную с любовью и умилением</li>
-        <li class="about-us__item about-us__homeland">Поддержка отчественного производителя</li>
-        <li class="about-us__item about-us__pack">Поставляется в подарочной упаковке</li>
+        <li class="about-us__item about-us__eco">Экологически<br /> чистые материалы</li>
+        <li class="about-us__item about-us__skandi">Скандинавский стиль<br /> по российской цене</li>
+        <li class="about-us__item about-us__likes">Увеличивает лайки<br /> на фотографиях</li>
+        <li class="about-us__item about-us__love">Связано вручную с<br /> любовью и умилением</li>
+        <li class="about-us__item about-us__homeland">Поддержка отечественного<br /> производителя</li>
+        <li class="about-us__item about-us__pack">Поставляется в<br /> подарочной упаковке</li>
       </ul>
     </section>
     <section class="reviews">
@@ -126,8 +176,9 @@
       <ul class="reviews__list slider">
         <li class="reviews__item slider__item">
           <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
-            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии
-            сразу стали более стильнее, а также набирают больше лайков!</p>
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои
+            фотографии
+            сразу стали более стильными,&nbsp;а также набирают больше лайков!</p>
           <div class="reviews__wrapper-author">
             <b class="reviews__author">Анастасия Красильникова</b>
             <span class="reviews__nick">@misssssiskras</span>
@@ -136,8 +187,10 @@
         </li>
       </ul>
       <div class="reviews__wrapper-btn">
-        <button class="reviews__btn reviews__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
-        <button class="reviews__btn reviews__next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+        <button class="reviews__btn reviews__prev" type="button"><span class="visually-hidden">Предыдущий
+            отзыв</span></button>
+        <button class="reviews__btn reviews__next" type="button"><span class="visually-hidden">Следующий
+            отзыв</span></button>
       </div>
       <a class="btn reviews__write" href="#">Написать</a>
     </section>
@@ -145,14 +198,14 @@
       <div class="contacts__wrapper-desktop">
         <h2 class="contacts__heading">Контакты</h2>
         <div class="contacts__text">
-          <p class="contacts__wrapper">
+          <p class="contacts__wrapper contacts__wrapper--mail">
             <span class="contacts__type">e-mail:</span>
             <a href="mailto:info@mimimishkashop.ru" class="contacts__mail">info@mimimishkashop.ru</a>
           </p>
           <div class="contacts__wrapper">
             <span class="contacts__type">адрес:</span>
             <address class="contacts__adress">
-              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+              г. Санкт-Петербург,<br />ул. Большая Конюшенная,<br />д. 19/8, офис 101
             </address>
           </div>
         </div>
@@ -167,7 +220,7 @@
   </main>
   <footer class="footer">
     <a href="#" class="logo-link footer__col footer__logo">
-      <img class="logo-img footer__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+      <img class="logo-img footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Мишка">
     </a>
     <div class="footer__col footer__social social">
       <ul class="social__list">
@@ -192,28 +245,30 @@
       </ul>
     </div>
     <p class="footer__col footer__developed">
-      Разработано
+      <span>Разработано</span>
       <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="visually-hidden">htmlacademy.ru</span>
         <img class="footer__logo-academy" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
       </a>
     </p>
   </footer>
-  <div class="modal">
-    <h2 class="title-h2 modal__heading">Добавить в корзину</h2>
-    <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
-      autocomplete="off">
-      <div class="sizes">
-        <h3 class="sizes__heading">Выберите размер:</h3>
-        <input class="sizes__option" type="radio" id="s-size" name="s-size" value="s-size" checked>
-        <label for="s-size" class="sizes__option-label">S</label>
-        <input class="sizes__option" type="radio" id="m-size" name="m-size" value="m-size">
-        <label for="m-size" class="sizes__option-label">M</label>
-        <input class="sizes__option" type="radio" id="l-size" name="l-size" value="l-size">
-        <label for="l-size" class="sizes__option-label">L</label>
-      </div>
-      <button class="btn modal__btn" type="submit">Добавить</button>
-    </form>
+  <div class="modal-wrapper">
+    <div class="modal">
+      <h2 class="title-h2 modal__heading">Добавить в корзину</h2>
+      <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
+        autocomplete="off">
+        <div class="sizes">
+          <h3 class="sizes__heading">Выберите размер:</h3>
+          <input class="sizes__option" type="radio" id="s-size" name="s-size" value="s-size" checked>
+          <label for="s-size" class="sizes__option-label">S</label>
+          <input class="sizes__option" type="radio" id="m-size" name="m-size" value="m-size">
+          <label for="m-size" class="sizes__option-label">M</label>
+          <input class="sizes__option" type="radio" id="l-size" name="l-size" value="l-size">
+          <label for="l-size" class="sizes__option-label">L</label>
+        </div>
+        <button class="btn modal__btn" type="submit">Добавить</button>
+      </form>
+    </div>
   </div>
 </body>
 

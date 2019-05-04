@@ -1,16 +1,21 @@
+
 .about-us {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: no-repeat;
-  background-position: 0 top;
-  background-size: 102%;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 20px;
+  background-repeat: repeat-x;
+  background-position: 17px top;
+  background-size: 103%;
+  padding-top: 33px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 0;
 }
 
 .about-us__list {
   .list-reset;
+  padding-top: 31px;
 }
 
 .about-us__item {
@@ -18,39 +23,93 @@
   line-height: @lh-normal;
   font-weight: 700;
   color: @black;
-  min-height: 126px;
-  padding-top: 90px;
+  padding-top: 56px;
+  margin-bottom: 26px;
+}
+
+.about-us__likes {
+  padding-top: 58px;
+}
+
+.about-us__love {
+  padding-left: 2px;
+}
+
+.about-us__homeland {
+  padding-top: 58px;
+  padding-left: 2px;
+}
+
+.about-us__pack {
+  padding-top: 57px;
+  padding-left: 2px;
 }
 
 @media (min-width: @tablet-width) {
   .about-us {
-    height: 650px;
+    max-width: none;
+    padding-left: 46px;
+    padding-top: 66px;
   }
 
   .about-us__list {
-    height: 450px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    padding-top: 47px;
+    padding-left: 4px;
   }
 
   .about-us__item {
-    width: 50%;
-    height: 150px;
+    width: 44%;
+    margin-bottom: 53px;
+    margin-right: 29px;
     font-size: @fs-big-t;
     line-height: @lh-normal-t;
+  }
+
+  .about-us__skandi {
+    order: 3;
+    padding-top: 57px;
+  }
+
+  .about-us__likes {
+    order: 5;
+  }
+
+  .about-us__love {
+    order: 2;
+  }
+
+  .about-us__homeland {
+    order: 4;
+  }
+
+  .about-us__pack {
+    order: 6;
   }
 }
 
 @media (min-width: @desktop-width) {
   .about-us {
-    padding-top: 90px;
-    padding-left: 175px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 84px;
+    padding-left: 170px;
     padding-right: 175px;
+    background-position: 27px top;
+    background-size: 100%;
   }
 
   .about-us__item {
-    width: 44%;
+    margin-right: 40px;
+  }
+
+  .about-us__scandi {
+    padding-top: 59px;
+  }
+
+  .about-us__likes {
+    padding-top: 58px;
   }
 }
 
