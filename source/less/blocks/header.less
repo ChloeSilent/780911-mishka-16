@@ -16,29 +16,16 @@
 }
 
 .header__link-logo {
-  // display: block;
-  padding-right: 18px;
-  // padding-top: 22px;
-  // padding-left: 18px;
-  // padding-bottom: 23px;
-  // padding-top: 17px;
-
-  // padding-bottom: 19px;
-  text-align: center;/**/
-  height: 80px;/**/
-  padding-left: 82px;/**/
+  display: block;
+  height: 80px;
+  text-align: center;
+  width: 100%;
 }
-
-// .header__logo {
-//   display: block;
-//   margin: 0 auto;
-// }
 
 .header__link-logo svg {
   display: inline-block;
   margin: 0 auto;
-  width: 152px;
-  // height: 35.034px;
+  width: 154px;
 }
 
 .header__logo--tablet {
@@ -81,26 +68,27 @@
 
   .header__link-logo {
     width: 48%;
-    height: 88px;
     padding: 0;
     border-right: 1px solid @gray;
     border-bottom: 1px solid #f1f1f1;
     order: -5;
-    text-align: left;/**/
-    padding-left: 28px;/**/
-    padding-top: 5px;/**/
+    text-align: left;
+    padding-left: 28px;
+    padding-top: 6px;
+    height: auto;
   }
 
-  // .header__logo {
-  //   width: 30%;
-  //   max-width: 140px;
-  //   margin: 23px auto 20px 50px;
-  // }
-
   .header__link-logo svg {
-    // width: 30%;
     max-width: 150px;
-    // margin: 23px auto 20px 50px;
+  }
+
+  .header__link-logo:hover svg {
+    fill: #666666;
+  }
+
+  .header__link-logo:active svg,
+  .header__link-logo:focus svg {
+    fill: #b2b2b2;
   }
 
   .header__logo--mobile {
@@ -139,7 +127,7 @@
   .header__nav-additional {
     display: flex;
     padding-left: 50px;
-    padding-top: 17px;
+    padding-top: 16px;
   }
 
   .nav__list-main {
@@ -154,12 +142,6 @@
     width: 20%;
     padding: 9px 39px 0;
   }
-
-  // .header__logo {
-  //   width: 100%;
-  //   margin: 0;
-  //   max-width: none;
-  // }
 
   .header__link-logo svg {
     width: 100%;
@@ -182,8 +164,6 @@
 
   .header__ship-info {
     margin-left: auto;
+    padding-top: 16px;
   }
 }
-
-
-/*hh*/
