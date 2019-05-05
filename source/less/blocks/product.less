@@ -1,14 +1,27 @@
 .product {
-  padding-top: 32px;
-  padding-bottom: 27px;
   font-size: @fs-normal;
   line-height: @lh-big;
   font-weight: 400;
   border-bottom: 1px solid @gray;
+  border-left: 1px solid @gray;
+  border-right: 1px solid @gray;
+}
+
+.product:not(:last-child) {
+  margin-bottom: 31px;
+}
+
+.product:hover {
+  box-shadow: 0 0 16px -2px rgba(236, 236, 236, 1);
+}
+
+.product:active,
+.product:focus {
+  box-shadow: 0 4px 5px 0 rgba(236, 236, 236, 1);
 }
 
 .product__link-image {
-  margin-bottom: 19px;
+  margin-bottom: 28px;
   display: block;
 }
 
@@ -17,7 +30,12 @@
 }
 
 .product__text {
-  padding-left: 28px;
+  padding-left: 27px;
+  padding-bottom: 27px;
+  min-height: 151px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .product__title {
@@ -31,7 +49,6 @@
 .product__description {
   position: relative;
   margin: 0;
-  margin-bottom: 41px;
   padding: 0;
   font-size: @fs-xs;
   line-height: @lh-xl;
@@ -60,6 +77,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding-right: 22px;
+  margin-top: auto;
 }
 
 .product__btn {
@@ -68,17 +86,13 @@
   width: 30px;
 }
 
-.catalog__item:nth-child(3) {
-  padding-top: 30px;
-}
-
 .catalog__item:nth-child(3) .product__link-image {
-  margin-bottom: 21px;
+  margin-bottom: 27px;
 }
 
-// .catalog__item:nth-child(3) .product__title {
-//   margin-bottom: 6px;
-// }
+.catalog__item:nth-child(3) .product__title {
+  margin-bottom: 6px;
+}
 
 .catalog__item:nth-child(3) .product__description {
   margin-bottom: 42px;
@@ -108,12 +122,9 @@
 
   .product__text {
     width: 50%;
-    padding-top: 27px;
+    padding-top: 26px;
     padding-left: 27px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
   }
 
   .product__title {
@@ -122,10 +133,6 @@
 
   .product__description {
     font-size: @fs-small;
-  }
-
-  .product__wrapper {
-    margin-top: auto;
   }
 
   .product__price {
@@ -188,6 +195,7 @@
     width: 100%;
     padding-top: 26px;
     min-height: 197px;
+    padding-bottom: 26px;
   }
 
   .product__description {
@@ -213,7 +221,15 @@
   }
 
   .product:nth-child(2) .product__text {
-    padding-left: 26px;
+    padding-left: 23px;
+  }
+
+  .product:nth-child(2) .product__link-title {
+    padding-left: 3px;
+  }
+
+  .product:nth-child(2) .product__description {
+    padding-left: 3px;
   }
 
   .product:nth-child(2) .product__title {

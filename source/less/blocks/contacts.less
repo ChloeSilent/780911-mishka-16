@@ -44,6 +44,24 @@
   border-bottom: 1px solid @tiffany;
 }
 
+.contacts__mail:hover {
+  color: #77d2c4;
+}
+
+.contacts__mail:hover::after {
+  border-bottom-color: #46c1ae;
+}
+
+.contacts__mail:active,
+.contacts__mail:focus {
+  color: #c7ece7;
+}
+
+.contacts__mail:active::after,
+.contacts__mail:focus::after {
+  border-bottom-color: #ecf9f7;
+}
+
 .contacts__adress {
   margin-left: 32px;
   font: inherit;
