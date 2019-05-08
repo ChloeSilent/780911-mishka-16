@@ -46,6 +46,15 @@
   height: 72.707px;
 }
 
+.header__link-logo:hover svg {
+  opacity: 0.6;
+}
+
+.header__link-logo:active svg,
+.header__link-logo:focus svg {
+  opacity: 0.3;
+}
+
 .header-search {
   display: flex;
 }
@@ -90,15 +99,6 @@
 
   .header__link-logo svg {
     max-width: 150px;
-  }
-
-  .header__link-logo:hover svg {
-    fill: #666666;
-  }
-
-  .header__link-logo:active svg,
-  .header__link-logo:focus svg {
-    fill: #b2b2b2;
   }
 
   .header__logo--mobile {

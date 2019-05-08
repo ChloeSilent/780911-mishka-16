@@ -8,53 +8,12 @@
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link href="css/style.css" rel="stylesheet">
-  <meta property="og:image" content="img/placeholder.jpg">
-  <meta property="og:image:height" content="518">
-  <meta property="og:image:width" content="768">
-  <meta property="og:url" content="#">
-  <meta property="og:title" content="Мишка">
-  <meta property="og:description" content="HTML Academy: Мишка">
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <script>
+  <!-- <script>
     document.createElement("picture");
-
   </script>
-  <script src="js/picturefill.min.js" async></script>
-  <!-- Pixel Glass -->
-  <style>
-    html {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* По умолчанию мобильный макет */
-      background-image: url("pixel-perfect/mishka-form-mobile--open.png");
-    }
-
-    /* Планшет */
-    @media (min-width: 760px) {
-      html {
-        /* Планшетный макет */
-        background-image: url("pixel-perfect/mishka-form-tablet.jpg");
-      }
-    }
-
-    /* Десктоп */
-    @media (min-width: 960px) {
-      html {
-        /* Десктопный макет */
-        background-image: url("pixel-perfect/mishka-form-desktop.jpg");
-      }
-    }
-
-    body {
-      opacity: 0.5;
-    }
-
-  </style>
-  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
+  <script src="js/picturefill.min.js" async></script> -->
 </head>
-
 <body>
   <header class="header">
     <a href="index.html" class="header__link-logo">
@@ -196,35 +155,35 @@
   </main>
   <footer class="footer">
     <a href="#" class="logo-link footer__col footer__logo">
-      <img class="footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Мишка">
+      <img class="logo-img footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Мишка">
     </a>
     <div class="footer__col footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a href="#" class="social__link social__link--inst">
             <span class="visually-hidden">Instagram</span>
-            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+            <svg class="icon-insta" width="21.769px" height="21.334px"><use xlink:href="img/svg/sprite.svg#icon-insta"></use></svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Facebook</span>
-            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+            <svg class="icon-fb" width="14.962px" height="27.718px"><use xlink:href="img/svg/sprite.svg#icon-fb"></use></svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--tw">
             <span class="visually-hidden">Twitter</span>
-            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+            <svg class="icon-twitter" width="23.494px" height="20.168px"><use xlink:href="img/svg/sprite.svg#icon-twitter"></use></svg>
           </a>
         </li>
       </ul>
     </div>
-    <p class="footer__col footer__developed footer__developed--form">
+    <p class="footer__col footer__developed">
       <span>Разработано</span>
       <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="visually-hidden">htmlacademy.ru</span>
-        <img class="footer__logo-academy" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+        <svg class="logo-htmlacademy" width="26.943px" height="34.09px"><use xlink:href="img/svg/sprite.svg#logo-htmlacademy"></use></svg>
       </a>
     </p>
   </footer>

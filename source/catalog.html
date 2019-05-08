@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
@@ -8,53 +7,13 @@
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link href="css/style.css" rel="stylesheet">
-  <meta property="og:image" content="img/placeholder.jpg">
-  <meta property="og:image:height" content="518">
-  <meta property="og:image:width" content="768">
-  <meta property="og:url" content="https://github.com/ChloeSilent/Sedona2">
-  <meta property="og:title" content="Мишка">
-  <meta property="og:description" content="HTML Academy: Мишка">
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <script>
+  <!-- <script>
     document.createElement("picture");
 
   </script>
-  <script src="js/picturefill.min.js" async></script>
-  <!-- Pixel Glass -->
-  <style>
-    html {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* По умолчанию мобильный макет */
-      background-image: url("pixel-perfect/mishka-catalog-mobile--open.png");
-    }
-
-    /* Планшет */
-    @media (min-width: 760px) {
-      html {
-        /* Планшетный макет */
-        background-image: url("pixel-perfect/mishka-catalog-tablet.jpg");
-      }
-    }
-
-    /* Десктоп */
-    @media (min-width: 960px) {
-      html {
-        /* Десктопный макет */
-        background-image: url("pixel-perfect/mishka-catalog-desktop.jpg");
-      }
-    }
-
-    body {
-      opacity: 0.5;
-    }
-
-  </style>
-  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
+  <script src="js/picturefill.min.js" async></script> -->
 </head>
-
 <body>
   <header class="header">
     <a href="index.html" class="header__link-logo">
@@ -128,7 +87,10 @@
           <p class="product__description">Рост 30 см, вес 200 г</p>
           <div class="product__wrapper">
             <span class="product__price">1 200 руб.</span>
-            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+            <button type="button" class="product__btn">
+              <span class="visually-hidden">Заказать</span>
+              <svg class="product__icon-cart" width="20.294px" height="18.849px""><use xlink:href="img/svg/sprite.svg#icon-cart"></use></svg>
+            </button>
           </div>
         </div>
       </li>
@@ -155,7 +117,10 @@
           <p class="product__description">Диаметр 15 см, высота 10 см</p>
           <div class="product__wrapper">
             <span class="product__price">690 руб.</span>
-            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+            <button type="button" class="product__btn">
+              <span class="visually-hidden">Заказать</span>
+              <svg class="product__icon-cart" width="20.294px" height="18.849px""><use xlink:href="img/svg/sprite.svg#icon-cart"></use></svg>
+            </button>
           </div>
         </div>
       </li>
@@ -182,13 +147,17 @@
           <p class="product__description">Диаметр 30 см, высота 30 см</p>
           <div class="product__wrapper">
             <span class="product__price">1 500 руб.</span>
-            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+            <button type="button" class="product__btn">
+              <span class="visually-hidden">Заказать</span>
+              <svg class="product__icon-cart" width="20.294px" height="18.849px""><use xlink:href="img/svg/sprite.svg#icon-cart"></use></svg>
+            </button>
           </div>
         </div>
       </li>
     </ul>
     <section class="video">
       <h2 class="video__heding">Процесс производства</h2>
+      <svg class="icon-video" width="32px" height="32px"><use xlink:href="img/svg/sprite.svg#icon-video"></use></svg>
       <video class="video__video" width="260" height="150">
         <source src="#" type="video/mp4">
         <p>
@@ -196,7 +165,9 @@
           <a href="#">Youtube</a>.
         </p>
       </video>
-      <div class="play-btn"></div>
+      <div class="video__play-btn">
+          <svg class="icon-play" width="100.678px" height="76.891px"><use xlink:href="img/svg/sprite.svg#icon-play"></use></svg>
+      </div>
       <div class="video-wrapper">
         <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
           появляются наши товары.</p>
@@ -206,26 +177,26 @@
   </main>
   <footer class="footer">
     <a href="#" class="logo-link footer__col footer__logo">
-      <img class="footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Мишка">
+      <img class="logo-img footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Мишка">
     </a>
     <div class="footer__col footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a href="#" class="social__link social__link--inst">
             <span class="visually-hidden">Instagram</span>
-            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+            <svg class="icon-insta" width="21.769px" height="21.334px"><use xlink:href="img/svg/sprite.svg#icon-insta"></use></svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Facebook</span>
-            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+            <svg class="icon-fb" width="14.962px" height="27.718px"><use xlink:href="img/svg/sprite.svg#icon-fb"></use></svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--tw">
             <span class="visually-hidden">Twitter</span>
-            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+            <svg class="icon-twitter" width="23.494px" height="20.168px"><use xlink:href="img/svg/sprite.svg#icon-twitter"></use></svg>
           </a>
         </li>
       </ul>
@@ -234,7 +205,7 @@
       <span>Разработано</span>
       <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="visually-hidden">htmlacademy.ru</span>
-        <img class="footer__logo-academy" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+        <svg class="logo-htmlacademy" width="26.943px" height="34.09px"><use xlink:href="img/svg/sprite.svg#logo-htmlacademy"></use></svg>
       </a>
     </p>
   </footer>
