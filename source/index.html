@@ -14,6 +14,35 @@
     document.createElement("picture");
   </script>
   <script src="js/picturefill.min.js" async></script> -->
+  <!-- Pixel Glass -->
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию мобильный макет */
+      background-image: url("pixel-perfect/mishka-index-mobile-modal.png");
+    }
+    /* Планшет */
+    @media (min-width: 760px) {
+      html {
+        /* Планшетный макет */
+        background-image: url("pixel-perfect/mishka-index-tablet-modal.jpg");
+      }
+    }
+    /* Десктоп */
+    @media (min-width: 960px) {
+      html {
+        /* Десктопный макет */
+        background-image: url("pixel-perfect/mishka-index-desktop-modal.jpg");
+      }
+    }
+    body {
+      opacity: 0.5;
+    }
+  </style>
+  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 <body>
   <header class="header">
@@ -203,16 +232,16 @@
   </footer>
   <div class="modal-wrapper">
     <div class="modal">
-      <h2 class="title-h2 modal__heading">Добавить в корзину</h2>
+      <h2 class="title-h2 modal__heading">Добавить в&nbsp;корзину</h2>
       <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
         autocomplete="off">
         <div class="sizes">
           <h3 class="sizes__heading">Выберите размер:</h3>
-          <input class="sizes__option" type="radio" id="s-size" name="s-size" value="s-size" checked>
+          <input class="sizes__option" type="radio" id="s-size" name="size" value="s-size" checked>
           <label for="s-size" class="sizes__option-label">S</label>
-          <input class="sizes__option" type="radio" id="m-size" name="m-size" value="m-size">
+          <input class="sizes__option" type="radio" id="m-size" name="size" value="m-size">
           <label for="m-size" class="sizes__option-label">M</label>
-          <input class="sizes__option" type="radio" id="l-size" name="l-size" value="l-size">
+          <input class="sizes__option" type="radio" id="l-size" name="size" value="l-size">
           <label for="l-size" class="sizes__option-label">L</label>
         </div>
         <button class="btn modal__btn" type="submit">Добавить</button>
