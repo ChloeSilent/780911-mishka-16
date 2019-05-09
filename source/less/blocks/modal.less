@@ -54,7 +54,7 @@
 @media (min-width: @tablet-width) {
   .modal {
     width: 569px;
-    height: 335px;
+    min-height: 335px;
     margin-top: 46%;
     padding-top: 34px;
   }
@@ -69,11 +69,15 @@
   }
 
   .modal__btn {
-    width: 71.7%;
+    width: 68.7%;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .modal {
+    margin-top: 20%;
+  }
+
   .modal-cart-btn {
     width: 292px;
     margin-left: 179px;
