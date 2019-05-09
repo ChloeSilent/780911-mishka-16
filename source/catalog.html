@@ -13,7 +13,7 @@
   </script>
   <script src="js/picturefill.min.js" async></script>
       <!-- Pixel Glass -->
-<!-- <style>
+<style>
   html {
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -40,7 +40,7 @@
   }
 </style>
 <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-<script src="../node_modules/pixel-glass/script.js"></script> -->
+<script src="../node_modules/pixel-glass/script.js"></script>
 <!-- // Pixel Glass -->
 </head>
 <body>
@@ -205,7 +205,7 @@
     </section>
   </main>
   <footer class="footer">
-    <a href="#" class="logo-link footer__col footer__logo">
+    <a href="index.html" class="logo-link footer__col footer__logo">
       <img class="logo-img footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Мишка">
     </a>
     <div class="footer__col footer__social social">
@@ -238,21 +238,23 @@
       </a>
     </p>
   </footer>
-  <div class="modal">
-    <h2 class="title-h2 modal__heading">Добавить в корзину</h2>
-    <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
-      autocomplete="off">
-      <div class="sizes">
-        <h3 class="sizes__heading">Выберите размер:</h3>
-        <input class="sizes__option" type="radio" id="s-size" name="s-size" value="s-size" checked>
-        <label for="s-size" class="sizes__option-label">S</label>
-        <input class="sizes__option" type="radio" id="m-size" name="m-size" value="m-size">
-        <label for="m-size" class="sizes__option-label">M</label>
-        <input class="sizes__option" type="radio" id="l-size" name="l-size" value="l-size">
-        <label for="l-size" class="sizes__option-label">L</label>
-      </div>
-      <button class="btn modal__btn" type="submit">Добавить</button>
-    </form>
+  <div class="modal-wrapper">
+    <div class="modal">
+      <h2 class="title-h2 modal__heading">Добавить в&nbsp;корзину</h2>
+      <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
+        autocomplete="off">
+        <div class="sizes">
+          <h3 class="sizes__heading">Выберите размер:</h3>
+          <input class="sizes__option" type="radio" id="s-size" name="size" value="s-size" checked>
+          <label for="s-size" class="sizes__option-label">S</label>
+          <input class="sizes__option" type="radio" id="m-size" name="size" value="m-size">
+          <label for="m-size" class="sizes__option-label">M</label>
+          <input class="sizes__option" type="radio" id="l-size" name="size" value="l-size">
+          <label for="l-size" class="sizes__option-label">L</label>
+        </div>
+        <button class="btn modal__btn" type="submit">Добавить</button>
+      </form>
+    </div>
   </div>
 </body>
 
