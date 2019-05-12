@@ -17,15 +17,42 @@
 
 .header__link-logo {
   display: block;
-  padding-right: 18px;
+  height: 80px;
+  text-align: center;
+  width: 100%;
   padding-top: 22px;
-  padding-left: 18px;
-  padding-bottom: 23px;
+}
+
+.header__logo--mobile {
+  width: 85.589px;
+  height: 35.034px;
 }
 
 .header__logo {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
+  width: 154px;
+}
+
+.header__logo--tablet {
+  display: none;
+  width: 112.389px;
+  height: 46.087px;
+}
+
+.header__logo--desktop {
+  display: none;
+  width: 148.051px;
+  height: 72.707px;
+}
+
+.header__link-logo:hover svg {
+  opacity: 0.6;
+}
+
+.header__link-logo:active svg,
+.header__link-logo:focus svg {
+  opacity: 0.3;
 }
 
 .header-search {
@@ -60,17 +87,26 @@
 
   .header__link-logo {
     width: 48%;
-    height: 88px;
     padding: 0;
     border-right: 1px solid @gray;
     border-bottom: 1px solid #f1f1f1;
     order: -5;
+    text-align: left;
+    padding-left: 48px;
+    padding-top: 22px;
+    height: auto;
   }
 
-  .header__logo {
-    width: 30%;
-    max-width: 140px;
-    margin: 23px auto 20px 50px;
+  .header__link-logo svg {
+    max-width: 150px;
+  }
+
+  .header__logo--mobile {
+    display: none;
+  }
+
+  .header__logo--tablet {
+    display: inline-block;
   }
 
   .header__nav-user {
@@ -101,7 +137,7 @@
   .header__nav-additional {
     display: flex;
     padding-left: 50px;
-    padding-top: 17px;
+    padding-top: 16px;
   }
 
   .nav__list-main {
@@ -117,10 +153,18 @@
     padding: 9px 39px 0;
   }
 
-  .header__logo {
+  .header__link-logo svg {
     width: 100%;
     margin: 0;
     max-width: none;
+  }
+
+  .header__logo--tablet {
+    display: none;
+  }
+
+  .header__logo--desktop {
+    display: inline-block;
   }
 
   .header__nav-user {
@@ -130,8 +174,6 @@
 
   .header__ship-info {
     margin-left: auto;
+    padding-top: 16px;
   }
 }
-
-
-/*hh*/

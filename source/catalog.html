@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
@@ -8,18 +7,12 @@
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link href="css/style.css" rel="stylesheet">
-  <meta property="og:image" content="img/placeholder.jpg">
-  <meta property="og:image:height" content="518">
-  <meta property="og:image:width" content="768">
-  <meta property="og:url" content="https://github.com/ChloeSilent/Sedona2">
-  <meta property="og:title" content="Мишка">
-  <meta property="og:description" content="HTML Academy: Мишка">
-  <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
   <script>
     document.createElement("picture");
+
   </script>
   <script src="js/picturefill.min.js" async></script>
-    <!-- Pixel Glass -->
+      <!-- Pixel Glass -->
 <style>
   html {
     background-repeat: no-repeat;
@@ -52,19 +45,22 @@
 </head>
 <body>
   <header class="header">
-    <a href="index.html" class="logo-link header__link-logo">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="logo-img header__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-      </picture>
+    <a href="index.html" class="header__link-logo">
+      <svg class="header__logo header__logo--mobile" width="85.589px" height="35.034px">
+        <use xlink:href="img/svg/sprite.svg#logo-mobile"></use>
+      </svg>
+      <svg class="header__logo header__logo--tablet" width="112.389px" height="46.087px">
+        <use xlink:href="img/svg/sprite.svg#logo-tablet"></use>
+      </svg>
+      <svg class="header__logo header__logo--desktop" width="148.051px" height="72.707px">
+        <use xlink:href="img/svg/sprite.svg#logo-desktop"></use>
+      </svg>
     </a>
     <div class="nav header__nav">
       <button class="nav__toggle nav__open" type="button">
-        <span class="visually-hidden">Навигация</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.514px" height="20.512px" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
-          <polygon fill="#231F20" points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 "/>
-        </svg>
-        </button>
+        <span class="visually-hidden">Навигация</span>
+        <svg class="icon-menu-close" width="20.514px" height="20.512px"><use xlink:href="img/svg/sprite.svg#icon-menu-close"></use></svg>
+      </button>
       <ul class="nav__list nav__list-main">
         <li class="nav__item nav__catalog">
           <a href="#" class="nav__link">Каталог товаров</a>
@@ -74,29 +70,25 @@
         </li>
       </ul>
     </div>
-      <ul class="nav header__nav-user">
-        <li class="nav__item nav__search">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-              <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
-            </svg>
-              <a href="#" class="nav__link">Поиск по сайту</a>
-        </li>
-        <li class="nav__item nav__cart">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-              <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
-            </svg>
-          <a href="#" class="nav__link">Корзина:<span class="nav__badge "> пока пуста</span></a>
-        </li>
-      </ul>
-      <ul class="nav header__nav-additional">
-        <li class="nav__item nav__item--transparent">
-          <a href="" class="nav__link">Новые поступления</a>
-        </li>
-        <li class="nav__item nav__item--transparent">
-          <a href="" class="nav__link">Распродажа</a>
-        </li>
-      </ul>
-      <span class="header__ship-info">Бесплатная доставка по России</span>
+    <ul class="nav header__nav-user">
+      <li class="nav__item nav__search">
+          <svg class="icon-search" width="17.6px" height="17.6px"><use xlink:href="img/svg/sprite.svg#icon-search"></use></svg>
+        <a href="#" class="nav__link">Поиск по сайту</a>
+      </li>
+      <li class="nav__item nav__cart">
+          <svg class="icon-cart" width="20.294px" height="18.849px""><use xlink:href="img/svg/sprite.svg#icon-cart"></use></svg>
+        <a href="#" class="nav__link">Корзина:<span class="nav__badge "> пока пуста</span></a>
+      </li>
+    </ul>
+    <ul class="nav header__nav-additional">
+      <li class="nav__item nav__item--transparent">
+        <a href="" class="nav__link">Новые поступления</a>
+      </li>
+      <li class="nav__item nav__item--transparent">
+        <a href="" class="nav__link">Распродажа</a>
+      </li>
+    </ul>
+    <span class="header__ship-info">Бесплатная доставка по России</span>
   </header>
   <main class="main catalog">
     <h1 class="main__heading catalog__heading">Каталог товаров</h1>
@@ -109,8 +101,10 @@
             <source type="image/webp" media="(min-width: 768px)"
               srcset="http://placehold.it/334x334 1x, http://placehold.it/334x334 2x">
             <source type="image/webp" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x"> -->
-            <source media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
             <img class="product__img" width="260" height="195" src="img/photo-hare-mobile@1x.jpg"
               srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
           </picture>
@@ -122,7 +116,10 @@
           <p class="product__description">Рост 30 см, вес 200 г</p>
           <div class="product__wrapper">
             <span class="product__price">1 200 руб.</span>
-            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+            <button type="button" class="product__btn">
+              <span class="visually-hidden">Заказать</span>
+              <svg class="product__icon-cart" width="20.294px" height="18.849px""><use xlink:href="img/svg/sprite.svg#icon-cart"></use></svg>
+            </button>
           </div>
         </div>
       </li>
@@ -134,8 +131,10 @@
             <source type="image/webp" media="(min-width: 768px)"
               srcset="http://placehold.it/334x334 1x, http://placehold.it/334x334 2x">
             <source type="image/webp" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x"> -->
-            <source media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
             <img class="product__img" width="260" height="195" src="img/photo-bowl-mobile@1x.jpg"
               srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
           </picture>
@@ -147,7 +146,10 @@
           <p class="product__description">Диаметр 15 см, высота 10 см</p>
           <div class="product__wrapper">
             <span class="product__price">690 руб.</span>
-            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+            <button type="button" class="product__btn">
+              <span class="visually-hidden">Заказать</span>
+              <svg class="product__icon-cart" width="20.294px" height="18.849px""><use xlink:href="img/svg/sprite.svg#icon-cart"></use></svg>
+            </button>
           </div>
         </div>
       </li>
@@ -159,8 +161,10 @@
             <source type="image/webp" media="(min-width: 768px)"
               srcset="http://placehold.it/334x334 1x, http://placehold.it/334x334 2x">
             <source type="image/webp" srcset="http://placehold.it/260x195 1x, http://placehold.it/260x195 2x"> -->
-            <source media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
             <img class="product__img" width="260" height="195" src="img/photo-toys-mobile@1x.jpg"
               srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
           </picture>
@@ -172,13 +176,17 @@
           <p class="product__description">Диаметр 30 см, высота 30 см</p>
           <div class="product__wrapper">
             <span class="product__price">1 500 руб.</span>
-            <button type="button" class="product__btn"><span class="visually-hidden">Заказать</span></button>
+            <button type="button" class="product__btn">
+              <span class="visually-hidden">Заказать</span>
+              <svg class="product__icon-cart" width="20.294px" height="18.849px""><use xlink:href="img/svg/sprite.svg#icon-cart"></use></svg>
+            </button>
           </div>
         </div>
       </li>
     </ul>
     <section class="video">
       <h2 class="video__heding">Процесс производства</h2>
+      <svg class="icon-video" width="32px" height="32px"><use xlink:href="img/svg/sprite.svg#icon-video"></use></svg>
       <video class="video__video" width="260" height="150">
         <source src="#" type="video/mp4">
         <p>
@@ -186,7 +194,9 @@
           <a href="#">Youtube</a>.
         </p>
       </video>
-      <div class="play-btn"></div>
+      <div class="video__play-btn">
+          <svg class="icon-play" width="100.678px" height="76.891px"><use xlink:href="img/svg/sprite.svg#icon-play"></use></svg>
+      </div>
       <div class="video-wrapper">
         <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
           появляются наши товары.</p>
@@ -195,7 +205,7 @@
     </section>
   </main>
   <footer class="footer">
-    <a href="#" class="logo-link footer__col footer__logo">
+    <a href="index.html" class="logo-link footer__col footer__logo">
       <img class="logo-img footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Мишка">
     </a>
     <div class="footer__col footer__social social">
@@ -203,19 +213,19 @@
         <li class="social__item">
           <a href="#" class="social__link social__link--inst">
             <span class="visually-hidden">Instagram</span>
-            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+            <svg class="icon-insta" width="21.769px" height="21.334px"><use xlink:href="img/svg/sprite.svg#icon-insta"></use></svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Facebook</span>
-            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+            <svg class="icon-fb" width="14.962px" height="27.718px"><use xlink:href="img/svg/sprite.svg#icon-fb"></use></svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social__link--tw">
             <span class="visually-hidden">Twitter</span>
-            <img class="social__icon" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+            <svg class="icon-twitter" width="23.494px" height="20.168px"><use xlink:href="img/svg/sprite.svg#icon-twitter"></use></svg>
           </a>
         </li>
       </ul>
@@ -224,25 +234,27 @@
       <span>Разработано</span>
       <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="visually-hidden">htmlacademy.ru</span>
-        <img class="footer__logo-academy" width="35" height="35" src="http://placehold.it/260x316" alt="social__icon">
+        <svg class="logo-htmlacademy" width="26.943px" height="34.09px"><use xlink:href="img/svg/sprite.svg#logo-htmlacademy"></use></svg>
       </a>
     </p>
   </footer>
-  <div class="modal">
-    <h2 class="title-h2 modal__heading">Добавить в корзину</h2>
-    <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
-      autocomplete="off">
-      <div class="sizes">
-        <h3 class="sizes__heading">Выберите размер:</h3>
-        <input class="sizes__option" type="radio" id="s-size" name="s-size" value="s-size" checked>
-        <label for="s-size" class="sizes__option-label">S</label>
-        <input class="sizes__option" type="radio" id="m-size" name="m-size" value="m-size">
-        <label for="m-size" class="sizes__option-label">M</label>
-        <input class="sizes__option" type="radio" id="l-size" name="l-size" value="l-size">
-        <label for="l-size" class="sizes__option-label">L</label>
-      </div>
-      <button class="btn modal__btn" type="submit">Добавить</button>
-    </form>
+  <div class="modal-wrapper">
+    <div class="modal">
+      <h2 class="title-h2 modal__heading">Добавить в&nbsp;корзину</h2>
+      <form class="modal__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
+        autocomplete="off">
+        <div class="sizes">
+          <h3 class="sizes__heading">Выберите размер:</h3>
+          <input class="sizes__option" type="radio" id="s-size" name="size" value="s-size" checked>
+          <label for="s-size" class="sizes__option-label">S</label>
+          <input class="sizes__option" type="radio" id="m-size" name="size" value="m-size">
+          <label for="m-size" class="sizes__option-label">M</label>
+          <input class="sizes__option" type="radio" id="l-size" name="size" value="l-size">
+          <label for="l-size" class="sizes__option-label">L</label>
+        </div>
+        <button class="btn modal__btn" type="submit">Добавить</button>
+      </form>
+    </div>
   </div>
 </body>
 

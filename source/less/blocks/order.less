@@ -1,6 +1,6 @@
 .order {
   padding-top: 22px;
-  margin-bottom: 55px;
+  // margin-bottom: 55px;
 }
 
 
@@ -9,7 +9,7 @@
   padding: 0;
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   font-size: @fs-xs;
   line-height: @lh-big;
   color: @gray-dark;
@@ -36,7 +36,7 @@
 }
 
 .order__wrapper-inputs {
-  padding-top: 34px;
+  padding-top: 33px;
 }
 
 .order__wrapper-type:not(:last-child) {
@@ -52,7 +52,7 @@
   flex-direction: column;
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 }
 
 .order__lbl-type {
@@ -145,7 +145,7 @@
   top: -12px;
   left: 0;
   display: block;
-  height: 40px;
+  height: 39px;
   width: 40px;
   border: 2px solid @gray-dark;
   cursor: pointer;
@@ -164,8 +164,8 @@
   transition: all 0.15s ease-in-out;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
-  background-size: 62%;
-  background-position: 5px 12px;
+  background-size: 63%;
+  background-position: 5px 10px;
 }
 
 
@@ -237,6 +237,7 @@
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 31px;
+  position: relative;
 }
 
 .order__input-tel {
@@ -263,6 +264,7 @@
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 32px;
+  position: relative;
 }
 
 .order__fieldset-mail .order__heading::after {
@@ -339,13 +341,12 @@
 
 @media (min-width: @tablet-width) {
   .order {
-    padding-top: 86px;
+    padding-top: 83px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: 0 top;
-    background-size: 102%;
-    margin-top: -16px;
-    margin-bottom: 51px;
+    background-size: 100%;
+    margin-top: -14px;
   }
 
   .order__heading {
@@ -355,7 +356,7 @@
   .order__text {
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     font-size: @fs-normal;
     line-height: 29px;
   }
@@ -593,7 +594,7 @@
 
 @media (min-width: @desktop-width) {
   .order {
-    padding-top: 140px;
+    padding-top: 139px;
   }
 
   .order__text {
@@ -705,13 +706,14 @@
   }
 
   .order__fieldset-mail .order__heading {
-    padding-top: 25px;
+    padding-top: 27px;
     padding-left: 59px;
   }
 
   .order__input-mail {
     padding-top: 16px;
     margin-left: 8px;
+    padding-bottom: 15px;
   }
 
   .order__fieldset-addition {
@@ -730,7 +732,7 @@
   }
 
   .order__additional-info {
-    margin-top: 18px;
+    margin-top: 17px;
   }
 
   .order__submit {
@@ -739,5 +741,3 @@
     padding-left: 4px;
   }
 }
-
-/*hh*/

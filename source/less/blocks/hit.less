@@ -56,7 +56,6 @@
 
 .hit__img {
   width: 260px;
-  // height: 315px;
   margin-bottom: 24px;
 }
 
@@ -97,7 +96,7 @@
     width: 100px;
     text-align: center;
     margin-right: 13px;
-    padding-top: 12px;
+    padding-top: 16px;
     line-height: 18px;
   }
 
@@ -153,9 +152,10 @@
 @media (min-width: @desktop-width) {
   .hit {
     padding-top: 141px;
-    background-position: 23px top;
+    background-position: 0 top;
+    background-size: 100%;
     margin-top: -26px;
-    padding-bottom: 71px;
+    padding-bottom: 73px;
   }
 
   .hit__wrapper-heading {
@@ -188,8 +188,16 @@
 
   .hit__descr {
     margin-left: 179px;
-    margin-bottom: 109px;
+    margin-bottom: 108px;
     width: 27%;
+  }
+
+  .hit__feathure {
+    padding-bottom: 12px;
+  }
+
+  .hit__descr :nth-child(3).hit__feathure {
+    padding-top: 7px;
   }
 
   .hit__val {
@@ -201,5 +209,3 @@
     margin-left: 166px;
   }
 }
-
-/*hh*/
