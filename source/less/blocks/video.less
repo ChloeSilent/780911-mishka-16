@@ -67,6 +67,17 @@
   transform: translate(-50%, -50%);
 }
 
+.video__play-btn:hover svg {
+    width: calc(100.678px * 1.2);
+    height: calc(76.891px * 1.2);
+  }
+
+  .video__play-btn:focus svg,
+  .video__play-btn:active svg {
+    width: calc(100.678px * 0.8);
+    height: calc(76.891px * 0.8);
+  }
+
 @media (min-width: @tablet-width) {
   .video {
     display: flex;
