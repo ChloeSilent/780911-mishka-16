@@ -162,7 +162,7 @@
   width: 37px;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
-  background-image: url("../img/icon-tick.svg");
+  background-image: url("../img/sprite/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 63%;
   background-position: 5px 10px;
@@ -594,7 +594,7 @@
 
 @media (min-width: @desktop-width) {
   .order {
-    padding-top: 139px;
+    padding-top: 138px;
   }
 
   .order__text {
@@ -607,7 +607,7 @@
   }
 
   .order__fieldset-type {
-    padding-top: 50px;
+    padding-top: 49px;
   }
 
   .order__fieldset-type .order__heading {
@@ -625,6 +625,11 @@
     width: 51px;
   }
 
+  .order__radio:checked + label::after {
+    top: 0;
+    left: 23px;
+  }
+
   .order__fieldset-color .order__heading {
     padding-top: 16px;
     padding-left: 61px;
@@ -639,12 +644,17 @@
     margin-bottom: 58px;
   }
 
+  .order__btn-color:checked + label::after {
+    top: -16px;
+    left: 10px;
+  }
+
   .order__wrapper-color:nth-child(2n) .order__lbl-color {
     padding-left: 88px;
   }
 
   .order__wrapper-color:nth-child(2n) .order__lbl-color::before {
-    left: 8px;
+    left: 9px;
   }
 
   .order__wrapper-color:nth-child(2n) .order__btn-color:checked + label::after {
@@ -668,11 +678,7 @@
   }
 
   .order__lbl-color::before {
-    left: 8px;
-  }
-
-  .order__btn-color:checked + label::after {
-    left: 10px;
+    left: 9px;
   }
 
   .order__fieldset-name .order__heading {
@@ -725,6 +731,10 @@
     min-width: 113px;
   }
 
+  .order__textarea {
+    padding-top: 12px;
+  }
+
   .order__wrapper-submit {
     padding-left: 225px;
     padding-right: 224px;
@@ -732,12 +742,13 @@
   }
 
   .order__additional-info {
-    margin-top: 17px;
+    margin-top: 16px;
   }
 
   .order__submit {
     width: 32.7%;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-left: 4px;
+    padding-bottom: 13px;
   }
 }
