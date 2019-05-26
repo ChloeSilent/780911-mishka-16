@@ -13,5 +13,5 @@ npm-debug.*
 Thumbs.db
 ps_files/
 source/img/pixel-perfect/
-
+build/img/*
 build/
