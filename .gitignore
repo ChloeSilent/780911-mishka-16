@@ -8,8 +8,10 @@
 *.sublime*
 node_modules/
 npm-debug.*
-source/css/*.css
-source/css/*.map
+# source/css/*.css
+# source/css/*.map
 Thumbs.db
 ps_files/
-source/pixel-perfect/
+source/img/pixel-perfect/
+build/img/*
+build/

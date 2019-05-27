@@ -1,7 +1,7 @@
 .catalogue-brief {
   font-family: @face;
   font-size: @fs-big;
-  line-height: @lh-l;
+  line-height: @lh-big;
   font-weight: 700;
   color: #ffffff;
   position: relative;
@@ -10,12 +10,12 @@
 
 .catalogue-brief__link {
   position: absolute;
-  min-height: 102px;
+  min-height: 103px;
   width: 100%;
   display: block;
   padding-top: 25px;
   padding-bottom: 28px;
-  padding-left: 29px;
+  padding-left: 28px;
   padding-right: 150px;
   text-decoration: none;
   color: #ffffff;
@@ -107,6 +107,13 @@
 @media (min-width: @desktop-width) {
   .catalogue-brief {
     width: 91.3%;
-    margin-top: -116px;
+    // margin-top: -116px;
+    margin-top: -108px;
+    min-height: 118px;
+    background-image: linear-gradient(to right, #63d1bb 50%, #56c3b2 50%);
+  }
+
+  .catalogue-brief__link {
+    min-height: 118px;
   }
 }
