@@ -236,8 +236,10 @@
   width: 100%;
   font-size: 17px;
   line-height: 18px;
+  outline: none;
 }
 
+.order__input-name:hover,
 .order__input-name:active,
 .order__input-name:focus {
   border-color: @tiffany;
@@ -265,11 +267,19 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
+  outline: none;
 }
 
+.order__input-tel:hover,
 .order__input-tel:active,
 .order__input-tel:focus {
   border-color: @tiffany;
+}
+
+.order__input-tel:hover + svg,
+.order__input-tel:active + svg,
+.order__input-tel:focus + svg {
+  fill: @tiffany;
 }
 
 .order__fieldset-mail {
@@ -299,11 +309,19 @@
   width: 100%;
   font-size: @fs-normal;
   line-height: 18px;
+  outline: none;
 }
 
+.order__input-mail:hover,
 .order__input-mail:active,
 .order__input-mail:focus {
   border-color: @tiffany;
+}
+
+.order__input-mail:hover + svg,
+.order__input-mail:active + svg,
+.order__input-mail:focus + svg {
+  fill: @tiffany;
 }
 
 .order__fieldset-addition {
@@ -325,8 +343,10 @@
   line-height: 18px;
   resize: none;
   margin-bottom: 13px;
+  outline: none;
 }
 
+.order__textarea:hover,
 .order__textarea:active,
 .order__textarea:focus {
   border-color: @tiffany;
