@@ -150,7 +150,6 @@
   width: 40px;
   border: 2px solid @gray-dark;
   cursor: pointer;
-  transition: all 0.15s ease-in-out;
 }
 
 .order__btn-color:checked + label::after {
@@ -162,7 +161,6 @@
   height: 37px;
   width: 37px;
   cursor: pointer;
-  transition: all 0.15s ease-in-out;
   background-image: url("../img/sprite/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 63%;
@@ -174,8 +172,19 @@
   border-color: @tiffany;
 }
 
-.order__lbl-color:active::before {
+.order__lbl-color:active::before,
+.order__lbl-color:focus::before {
   border-color: @gray;
+}
+
+.order__btn-color:checked + label:focus::after,
+.order__btn-color:checked + label:active::after {
+  background-image: url("../img/sprite/icon-tick.svg");
+}
+
+.order__btn-color:checked + label:focus::before,
+.order__btn-color:checked + label:active::before {
+   border-color: @gray;
 }
 
 
