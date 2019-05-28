@@ -10,11 +10,39 @@
   <link href="css/style.min.css" rel="stylesheet">
   <script>
     document.createElement("picture");
-
   </script>
   <script src="js/picturefill.min.js" async></script>
-</head>
+    <!-- Pixel Glass -->
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url("img/pixel-perfect/mishka-index-mobile--open.png");
+      }
+      /* Планшет */
+      @media (min-width: 760px) {
+        html {
+          /* Планшетный макет */
+          background-image: url("img/pixel-perfect/mishka-index-tablet.jpg");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 960px) {
+        html {
+          /* Десктопный макет */
+          background-image: url("img/pixel-perfect/mishka-index-desktop.jpg");
+        }
+      }
 
+      body {
+        opacity: 0.5;
+      }
+    </style>
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- Pixel Glass -->
+</head>
 <body>
   <header class="header">
     <a href="#" class="header__link-logo">
@@ -270,5 +298,4 @@
   </div>
   <script src="js/svgxuse.js" defer></script>
 </body>
-
 </html>
